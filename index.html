@@ -4,57 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Единый центр записи</title>
-    <script src="https://kit.fontawesome.com/a44f6b2d07.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a44f6b2d07.js" crossorigin="anonymous"></script>  
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <script>$( function() {$( "#tabs" ).tabs();} );</script>
-    <style>
-        li{
-            list-style-type: none;
-        }
-    </style>
 </head>
-<body style="background-color: #cbd4e6">
+<body>
     <header>
-        <div>
-            <img src="image/logo.png" alt="логотип центра записи">
-            <p><b>Единый <br> Центр записи</b></p>
-			<span><i class="fas fa-phone-square-alt"></i><b> 80300 5000</b></span>
+        <div class="header container">
+            <div class="logo">
+                <div class="brand">
+                    <div><img src="image/logo.png" alt="логотип центра записи"></div>
+                    <div><p>Единый <br> Центр записи</p></div>
+                </div>
+                <div class="header-phone"><i class="fas fa-phone-square-alt"></i> 80300 5000</div>
+                
+            </div>
+            <nav  class="menu">
+                <ul>
+                    <li class="first-child"><a href="#">Главная</a></li>
+                    <li class="services">Услуги <img src="image/arrow-down.png" alt="Стелка вниз">
+                        <div  class="menu-services">
+                               <a href="#">МРТ</a>
+                               <a href="#">КТ</a>
+                               <a href="#">Рентген</a>
+                        </div>
+                    </li> 
+                    <li><a href="#">Клиники и кабинеты</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li>Услуги
-                    <ul>
-                        <li><a href="#"></a>МРТ</li>
-                        <li><a href="#"></a>КТ</li>
-                        <li><a href="#"></a>Рентген</li>
-                    </ul>
-                </li>
-                <li><a href="#">Клиники и кабинеты</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
+       
+      
     </header>
-
-    <section>
-        <img src="image/doc.png" alt="улыбающийся врач">
-        <p>
-            Всю необходимую информацию о том, как и в каком центре<br>
-            сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
-            Вас клиники, цены на диагностику и порядок прохождения<br>
-            процедур, а также записаться на исследование можно по<br>
-            телефону 8 (812) 385-77-56
-        </p>
-        <h2>Оставьте свой номер, а мы<br>Вам перезвоним</h2>
-        <form action="">
-            <input type="tel"  maxlength="13" autocomplete="none" placeholder="+380"
-                   pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
-            <input type="submit">
-        </form>
+<!--
+    <section class="banner-doc">
+        <div class="container">
+            <div><img src="image/doc.png" alt="улыбающийся врач"></div>
+                    <div class="banner-doc__text">
+                        <p>
+                            Всю необходимую информацию о том, как и в каком центре<br>
+                            сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
+                            Вас клиники, цены на диагностику и порядок прохождения<br>
+                            процедур, а также записаться на исследование можно по<br>
+                            телефону 8 (812) 385-77-56
+                        </p>
+                        <h2 class="form-title">Оставьте свой номер, а мы<br>Вам перезвоним</h2>
+                        <form action="">
+                            <input type="tel"  maxlength="13" autocomplete="none" placeholder="+380"
+                                               pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
+        </div>
     </section>
 
     <section>
@@ -300,5 +309,10 @@
         </div>
     </footer>
 
+
+
+-->
+
+  
 </body>
 </html>
