@@ -155,17 +155,20 @@ header{
  }
 
  @media (min-width: 1200px) {
-     .menu{
+     .menu {
          margin-top: -20px;
      }
-     .brand__phone{
+
+     .brand__phone {
          margin-top: -10px;
      }
-    .menu__item
-    .services__menu{
-        top: 58px;
-        padding: 16px;
-    }
+
+     .menu__item
+     .services__menu {
+         top: 58px;
+         padding: 16px;
+     }
+ }
 /*
      .banner-doc{
          background-color: #cbd4e6;
