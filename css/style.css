@@ -89,7 +89,7 @@ header{
     flex-direction: column;
 
 }
-@media (min-width: 320px) and (max-width: 576) {
+@media (min-width: 320px) and (max-width: 576px) {
    /* шапка */
    header{
         padding: 16px;
