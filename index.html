@@ -13,36 +13,31 @@
     <script>$( function() {$( "#tabs" ).tabs();} );</script>
 </head>
 <body>
-    <header>
-        <div class="header container">
-            <div class="logo">
-                <div class="brand">
-                    <div><img src="image/logo.png" alt="логотип центра записи"></div>
-                    <div><p>Единый <br> Центр записи</p></div>
+    <header class="header" aria-label="шапка сайта">
+            <div class="header__brand"  aria-label="логотип сайта">
+                <div class="brand" role="banner">
+                    <div><img class="brand__img" src="image/logo.png" role="img" alt="логотип центра записи"></div>
+                    <span class="brand__name"><p>Единый <br> Центр записи</p></span>
                 </div>
-                <div class="header-phone"><i class="fas fa-phone-square-alt"></i> 80300 5000</div>
-                
+                <span class="brand__phone" aria-label="номер телефона 80300 5000"><i class="fas fa-phone-square-alt"></i> 80300 5000</span>              
             </div>
-            <nav  class="menu">
-                <ul>
-                    <li class="first-child"><a href="#">Главная</a></li>
-                    <li class="services">Услуги <img src="image/arrow-down.png" alt="Стелка вниз">
-                        <div  class="menu-services">
-                               <a href="#">МРТ</a>
-                               <a href="#">КТ</a>
-                               <a href="#">Рентген</a>
+            <nav class="header__menu" role="navigation" aria-label="меню навигации">
+                <ul class="menu" role="list" aria-label="виды услуг">
+                    <li role="listitem" class="menu__item"><a href="#">Главная</a></li>
+                    <li role="listitem" class="menu__item services">Услуги <img src="image/arrow-down.png" alt="Стелка вниз">
+                        <div class="services__menu">
+                            <a href="#">МРТ</a>
+                            <a href="#">КТ</a>
+                            <a href="#">Рентген</a>
                         </div>
                     </li> 
-                    <li><a href="#">Клиники и кабинеты</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li role="listitem" class="menu__item"><a href="#">Клиники и кабинеты</a></li>
+                    <li role="listitem" class="menu__item"><a href="#">О нас</a></li>
+                    <li role="listitem" class="menu__item"><a href="#">Статьи</a></li>
+                    <li role="listitem" class="menu__item"><a href="#">FAQ</a></li>
+                    <li role="listitem"class="menu__item"><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-        </div>
-       
-      
     </header>
 <!--
     <section class="banner-doc">
