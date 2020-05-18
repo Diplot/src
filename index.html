@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <script>$( function() {$( "#tabs" ).tabs();} );</script>
 </head>
@@ -39,28 +39,27 @@
                 </ul>
             </nav>
     </header>
-<!--
-    <section class="banner-doc">
-        <div class="container">
-            <div><img src="image/doc.png" alt="улыбающийся врач"></div>
-                    <div class="banner-doc__text">
-                        <p>
-                            Всю необходимую информацию о том, как и в каком центре<br>
-                            сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
-                            Вас клиники, цены на диагностику и порядок прохождения<br>
-                            процедур, а также записаться на исследование можно по<br>
-                            телефону 8 (812) 385-77-56
-                        </p>
-                        <h2 class="form-title">Оставьте свой номер, а мы<br>Вам перезвоним</h2>
-                        <form action="">
-                            <input type="tel"  maxlength="13" autocomplete="none" placeholder="+380"
-                                               pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
-                            <button type="submit">Отправить</button>
-                        </form>
-                    </div>
-        </div>
-    </section>
 
+    <section class="recall">
+            <div class="recall__img"><img src="image/doc.png" alt="улыбающийся врач"></div>
+            <div class="recall__content"></div>
+                <div class="recall__text">
+                    <p class="recall__text-p">
+                        Всю необходимую информацию о том, как и в каком центре<br>
+                        сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
+                        Вас клиники, цены на диагностику и порядок прохождения<br>
+                        процедур, а также записаться на исследование можно по<br>
+                        телефону <span>8 (812) 385-77-56 </span>                    
+                    </p>
+                    <form action="" class="recall__form">
+                        <label for="recall__phone" class="form-title">Оставьте свой номер, а мы <br class="form-title__br">Вам перезвоним<br></label>
+                        <input id="recall__phone" class="recall__input" type="tel" maxlength="13" autocomplete="none" placeholder="+380"
+                                        pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
+                        <input class="recall__button"type="submit"></input>
+                    </form>
+                </div>
+    </section>
+<!--
     <section>
         <nav>
             <div>
