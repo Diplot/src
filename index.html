@@ -40,8 +40,8 @@
             </nav>
     </header>
 
-    <section class="recall">
-            <div class="recall__img"><img src="image/doc.png" alt="улыбающийся врач"></div>
+    <section class="recall" role="banner" aria-label="баннер">
+            <div class="recall__img"><img src="image/doc.png" alt="улыбающийся врач" role="img" alt="фоновое изображение баннера"></div>
             <div class="recall__content"></div>
                 <div class="recall__text">
                     <p class="recall__text-p">
@@ -51,43 +51,44 @@
                         процедур, а также записаться на исследование можно по<br>
                         телефону <span>8 (812) 385-77-56 </span>                    
                     </p>
-                    <form action="" class="recall__form">
+                    <form action="" class="recall__form" role="form" aria-label="форма перезвона">
                         <label for="recall__phone" class="form-title">Оставьте свой номер, а мы <br class="form-title__br">Вам перезвоним<br></label>
                         <input id="recall__phone" class="recall__input" type="tel" maxlength="13" autocomplete="none" placeholder="+380"
                                         pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
-                        <input class="recall__button"type="submit"></input>
+                        <button class="recall__button"type="submit" role="button" aria-label="кнопка отправки номера телефона на перезвон">Отправить</button>
                     </form>
                 </div>
     </section>
-<!--
-    <section>
-        <nav>
-            <div>
-                <img src="image/stethoscope.png" alt="схематическое изображение стетоскопа">
+
+    <section class="advantages">
+        <nav class="advantages__menu">
+            <div class="cube best_treatment">
+                <figure class="cube__circle"><img src="image/stethoscope.png" alt="схематическое изображение стетоскопа"></figure>
                 <h3>Best Treatment</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
 
-            <div>
-                <img src="image/emergency_help.png" alt="схематическое изображение трубки телефона звонящей в клинику">
+            <div class="cube emergency_help">
+                <figure class="cube__circle"><img src="image/emergency_help.png" alt="схематическое изображение трубки телефона звонящей в клинику">
+                </figure>
                 <h3>Emergency Help</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
 
-            <div>
-                <img src="image/medical_staff.png" alt="схематическое изображение медицинского работника">
+            <div class="cube medical_staff">
+                <figure class="cube__circle"><img src="image/medical_staff.png" alt="схематическое изображение медицинского работника"></figure>
                 <h3>Medical Staff</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
 
-            <div>
-                <img src="image/car.png" alt="схематическое изображение машины скорой помощи">
+            <div class="cube qualified_doctors">
+                <figure class="cube__circle"><img src="image/car.png" alt="схематическое изображение машины скорой помощи"></figure>
                 <h3>Qualified Doctors</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
         </nav>
     </section>
-
+<!--
     <div id="tabs">
         <ul>
             <li><a href="#tab-mrt">МРТ</a></li>
