@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+    .menu {
+        margin-top: -20px;
+    }
+   .menu__item .services__menu {
+        top: 58px;
+        padding: 16px;
+    }
+    .cube{
+       width: 360px;
+       height: 325px;
+   } 
+}

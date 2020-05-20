@@ -8,18 +8,17 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Yeseva+One&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <script>$( function() {$( "#tabs" ).tabs();} );</script>
 </head>
 <body>
     <header class="header" aria-label="шапка сайта">
             <div class="header__brand"  aria-label="логотип сайта">
                 <div class="brand" role="banner">
-                    <div><img class="brand__img" src="image/logo.png" role="img" alt="логотип центра записи"></div>
-                    <span class="brand__name"><p>Единый <br> Центр записи</p></span>
+                    <div><img class="brand__img" src="image/logo.png" alt="логотип центра записи"></div>
+                    <div class="brand__name"><p>Единый <br> Центр записи</p></div>
                 </div>
-                <span class="brand__phone" aria-label="номер телефона 80300 5000"><i class="fas fa-phone-square-alt"></i> 80300 5000</span>              
+                <a href="tel:803005000" class="brand__phone" aria-label="номер телефона горячей линии"><i class="fas fa-phone-square-alt"></i> 80300 5000</a>              
             </div>
             <nav class="header__menu" role="navigation" aria-label="меню навигации">
                 <ul class="menu" role="list" aria-label="виды услуг">
@@ -35,7 +34,7 @@
                     <li role="listitem" class="menu__item"><a href="#">О нас</a></li>
                     <li role="listitem" class="menu__item"><a href="#">Статьи</a></li>
                     <li role="listitem" class="menu__item"><a href="#">FAQ</a></li>
-                    <li role="listitem"class="menu__item"><a href="#">Контакты</a></li>
+                    <li role="listitem" class="menu__item"><a href="#">Контакты</a></li>
                 </ul>
             </nav>
     </header>
@@ -55,7 +54,7 @@
                         <label for="recall__phone" class="form-title">Оставьте свой номер, а мы <br class="form-title__br">Вам перезвоним<br></label>
                         <input id="recall__phone" class="recall__input" type="tel" maxlength="13" autocomplete="none" placeholder="+380"
                                         pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
-                        <button class="recall__button"type="submit" role="button" aria-label="кнопка отправки номера телефона на перезвон">Отправить</button>
+                        <button class="recall__button" type="submit" role="button" aria-label="кнопка отправки номера телефона на перезвон">Отправить</button>
                     </form>
                 </div>
     </section>
@@ -229,84 +228,96 @@
             <button><img src="image/arrow-right.png" alt="стрелока вправо"></button>
         </div>
     </section>
+-->    
     <footer>
-        <div>
-            <img src="image/logo.png" alt="логотип центра записи">
-            <p class="">Единый <br> Центр записи</p>
-            <form action="">
-                <p>Заказать звонок: </p>
-                <input type="tel"  maxlength="13" autocomplete="none" placeholder="+380"
-                       pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
-                <input type="submit">
+        <div class="footer">
+            <div class="brand" role="banner">
+                
+                <img class="brand__img" src="image/logo.png" alt="логотип центра записи">
+                <div class="brand__name"><p class="">Единый <br> Центр записи</p></div>
+        </div>    
+            <form action="" class="form__footer">
+                <label for="footer-recall" class="form__footer-title">Заказать звонок:</label>
+                <input type="tel" id="footer-recall" class="recall__input" maxlength="13" autocomplete="none" placeholder="+380"
+                    pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
+                <button type="submit" class="recall__button">Отправить</button>
             </form>
         </div>
-        <section>
-            <div>
-                <ul>Get in Touch
-                    <li>
-                        <img src="image/envelope.png" alt="значок конверта">
-                        <p>free@psdfreebies.com</p>
-                        <p>free@psdfreebies.com</p>
+        
+        <section class="footer_content">
+            <div class="footer_content__column">
+                <ul class="footer_content__heading">Get in Touch
+                    <li class="list__item">
+                        <img class="list__item_mail" src="image/envelope.png" alt="значок конверта">
+                        <div class="list__item_column">
+                            <a href="mailto:free@psdfreebies.com">free@psdfreebies.com</a> 
+                            <a href="mailto:free@psdfreebies.com">free@psdfreebies.com</a>
+                        </div>
                     </li>
-                    <li>
-                        <img src="image/mobile.png" alt="значок мобильного телефона">
-                        <p>+123 456 7890</p>
-                        <p>+123 456 7890</p>
+
+                    <li class="list__item">
+                        <img class="list__item_phone" src="image/mobile.png" alt="значок мобильного телефона">
+                        <div class="list__item_column">
+                            <a href="tel:+1234567890">+123 456 7890</a>                        
+                            <a href="tel:+1234567890">+123 456 7890</a>
+                        </div>
+                        
                     </li>
-                    <li>
-                        <img src="image/map.png" alt="значок карты">
-                        <p>123, Main Road, New City,</p>
-                        <p>My Country 123456</p>
+                    <li class="list__item">
+                        <img class="list__item_map" src="image/map.png" alt="значок карты">
+                        <div class="list__item_column">
+                            <a href="https://www.google.com/maps/@48.4617838,35.0518051,20z">123, Main Road, New City,<br>My Country 123456</a>
+                        </div>
                     </li>
-                    <li>
+                    <li class="list__item">
 						<nav>
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-google-plus-g"></i></a>
-							<a href="#"><i class="fab fa-vk"></i></a>
-							<a href="#"><i class="fab fa-youtube"></i></a>
-							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							<a class="list__item_social" href="#"><i class="fab fa-facebook-f"></i></a>
+							<a class="list__item_social" href="#"><i class="fab fa-google-plus-g"></i></a>
+							<a class="list__item_social" href="#"><i class="fab fa-vk"></i></a>
+							<a class="list__item_social" href="#"><i class="fab fa-youtube"></i></a>
+							<a class="list__item_social" href="#"><i class="fab fa-linkedin-in"></i></a>
 						</nav>
                     </li>
                 </ul>
             </div>
-            <div>
-                <ul>Quick Links
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Faq</a></li>
-                    <li><a href="#">Insurance</a></li>
-                    <li><a href="#">Contact us</a></li>
+            <div class="footer_content__column">
+                <ul class="footer_content__heading">Quick Links
+                    <li class="footer_content__item"><a class="arrow" href="#">About us</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Blog</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Contact us</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Faq</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Insurance</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Contact us</a></li>
                 </ul>
             </div>
-            <div>
-                <ul>Our Services
-                    <li><a href="#">Work Injuries</a></li>
-                    <li><a href="#">Sport Injuries</a></li>
-                    <li><a href="#">Cold Laser Therapy</a></li>
-                    <li><a href="#">Massage Therapy</a></li>
-                    <li><a href="#">Physiotherapy</a></li>
-                    <li><a href="#">Chiropratic Therapy</a></li>
+            <div class="footer_content__column">
+                <ul class="footer_content__heading">Our Services
+                    <li class="footer_content__item"><a class="arrow" href="#">Work Injuries</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Sport Injuries</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Cold Laser Therapy</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Massage Therapy</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Physiotherapy</a></li>
+                    <li class="footer_content__item"><a class="arrow" href="#">Chiropratic Therapy</a></li>
                 </ul>
             </div>
-            <div>
-                <form action="">
-                    <h2>Enquiry Form</h2>
-                    <p><input type="text" placeholder="Name" required></p>
-                    <p><input type="tel" placeholder="Phone" required></p>
-                    <p><textarea name="comment" cols="40" rows="5" placeholder="Message" required></textarea></p>
-                    <input type="submit" value="SUBMIT">
+            <div class="footer_content__column">
+                <form action="" class="footer__form">
+                    <label class="footer__form_label" for="footer__form">Enquiry Form</label>
+                    <p><input class="form__input form__input_name" id="footer__form" type="text" placeholder="Name" required></p>
+                    <p><input class="form__input" type="tel" placeholder="Phone" required></p>
+                    <p><textarea class="form__input" name="comment" cols="40" rows="5" placeholder="Message" required></textarea></p>
+                    <input class="footer__form_button" type="submit" value="SUBMIT">
                 </form>
             </div>
         </section>
-        <div>
-            <h4>Copyright © 2017.</h4>
+        <div class="footer">
+            <p class="footer__copyright">Copyright © 2017.</p>
         </div>
     </footer>
 
 
 
--->
+
 
   
 </body>
