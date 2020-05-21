@@ -24,15 +24,15 @@ a{
 
 @font-face{
     font-family: "Myriad Pro";
-    src: url(/font/myriad_pro.otf);
+    src: url(../font/myriad_pro.otf);
 }
 @font-face{
     font-family: "Calibri";
-    src: url(/font/calibri.ttf);
+    src: url(../font/calibri.ttf);
 }
 @font-face{
     font-family: "Tahoma";
-    src: url(/font/tahoma.ttf);
+    src: url(../font/tahoma.ttf);
 }
 /*шапка*/
 .header{
