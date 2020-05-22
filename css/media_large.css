@@ -31,5 +31,8 @@
         padding: 20px 0;
         width: 50%;
         justify-content: center;
+    }
+    .footer__form{
+        padding-left: 40px;
     }   
     }
