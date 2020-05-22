@@ -40,7 +40,20 @@
         filter: drop-shadow(0px 0px 6px #000);
     }
     .cube{
-        width: 325px;
+        width: 50%;
         height: 325px;
-    } 
+    }
+    
+    
+    /* footer */
+    .footer_content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer_content__column{
+        padding: 20px 0;
+        width: 50%;
+        justify-content: center;
+    }
+
  }

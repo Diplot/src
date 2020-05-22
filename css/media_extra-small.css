@@ -97,8 +97,58 @@
   }
  
   .cube{
-      width: 320px;
+      width: 100%;
       height: 320px;
   }  
- }
  
+
+/* footer section*/ 
+.footer{
+    padding: 20px 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer .brand{
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.footer .brand__img{
+    width: 64px;
+    height: 57px;
+}
+.footer .brand__name{
+    font-size:24px;
+}
+.form__footer{
+    text-align: center;
+}
+.form__footer .recall__input{
+    margin-top: 16px;
+}
+.footer_content{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer_content__column{
+    padding: 20px 0;
+    width: 80%;
+    justify-content: center;
+}
+.footer_content__heading{
+    text-align: center;
+    padding-left: 0px;
+}
+.list__item:first-child{
+    padding-top: 20px;
+}
+.list__item,.footer_content__item{
+    text-align: left;
+    padding: 10px 0 ;
+}
+.list__item_social{
+    padding-right: 20px; 
+}
+.footer__form{
+    text-align: center;
+}
+}
