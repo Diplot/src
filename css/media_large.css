@@ -20,6 +20,9 @@
         width: 50%;
         height: 325px;
     }
+    .form__footer-title br{
+        display: none;
+    }
     .footer_content{
         flex-wrap: wrap;
         justify-content: center;
