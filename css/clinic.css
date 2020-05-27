@@ -1,0 +1,105 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: "Myriad Pro";
+    src: url(../font/myriad_pro.otf);
+}
+@font-face{
+    font-family: "Calibri";
+    src: url(../font/calibri.ttf);
+}
+@font-face{
+    font-family: "Tahoma";
+    src: url(../font/tahoma.ttf);
+}
+/*-----------------------------------------------------------------------------------*/
+.clinic{
+    padding: 30px 20px 10px 20px;
+    width: 690px;
+    height: 285px;
+    border: 3px solid  #43b1d2;
+}
+.clinic__figure{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.clinic__img{
+    width: 196px;
+    height: 51px;
+}
+
+.clinic__name{
+    font-size: 36px;
+    line-height: 20px;
+    color: #494848;
+    font-family: "Calibri";
+    font-weight: bold;
+    text-align: right;
+}
+.clinic__address{
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 14px;
+    color: #43b1d2;
+    font-family: "Calibri";
+    font-style: italic;
+    text-align: right;
+}
+.clinic__text{
+    font-size: 19px;
+    line-height: 17px;
+    color: #494848;
+    font-family: "Calibri";
+    padding-bottom: 30px;
+}
+.clinic__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clinic__phone_number{
+    font-size: 19px;
+    line-height: 17px;
+    color: #494848;
+    font-family: "Calibri";
+    font-weight: bold;
+    
+}
+.clinic__button{
+    width: 175px;
+    height: 45px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Calibri";
+    background-color: #37c3a8;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
