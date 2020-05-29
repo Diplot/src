@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/clinic.css">
+    <link rel="stylesheet" href="dist/css/main.css">
     <title>Document</title>
 </head>
 <body>
     <section class="clinic">
         <div itemscope itemtype="http://schema.org/MedicalOrganization">
-            <figure class="clinic__figure" >
-                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
-            <figcaption class="clinic__name"> <span itemprop="legalName">Название клиники</span>
-                <div class="clinic__address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
-                    <span itemprop="addressLocality">Cанкт-Петербург</span>
-                </div>  
-            </figcaption>
-            </figure>
-            
+            <div class="clinic__card" >
+                    <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                    <div class="clinic__info">
+                        <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                        <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                            <span itemprop="addressLocality">Cанкт-Петербург</span>
+                        </div>  
+                    </div>
+            </div>            
             <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
                     дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
                     как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
                     увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
             <div class="clinic__bottom">
-                <p class="clinic__phone_number">Наш номер: <span itemprop="telephone">+3856 0 99 66 65</span></p>
+                <p class="clinic__phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
                 <button class="clinic__button">Заказать звонок</button>
             </div>
         </div>

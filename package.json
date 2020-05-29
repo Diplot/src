@@ -17,7 +17,14 @@
   },
   "homepage": "https://github.com/Diplot/src#readme",
   "dependencies": {
+    "gulp-sass": "^4.1.0",
     "jquery": "^3.5.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "npx": "^10.2.2",
+    "readable-stream": "^3.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
   }
 }
