@@ -1,0 +1,22 @@
+@media (min-width: 1440px){
+    .container{
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .menu {
+        margin-top: -20px;
+    }
+   .menu__item .services__menu {
+        top: 58px;
+        padding: 16px;
+    }
+    .cube{
+       width: 360px;
+       height: 325px;
+   }
+   .form__footer-title br{
+    display: none;
+    } 
+
+
+} 

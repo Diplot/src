@@ -4,6 +4,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 ul,
 ol,
@@ -24,19 +25,23 @@ a{
 
 @font-face{
     font-family: "Myriad Pro";
-    src: url(../font/myriad_pro.otf);
+    src: url(../../font/myriad_pro.otf);
 }
 @font-face{
     font-family: "Calibri";
-    src: url(../font/calibri.ttf);
+    src: url(../../font/calibri.ttf);
 }
 @font-face{
     font-family: "Tahoma";
-    src: url(../font/tahoma.ttf);
+    src: url(../../font/tahoma.ttf);
 }
+
+$main-color: #6bf5f5;
+$bg-color: #cbd4e6;
+
 /*шапка*/
 .header{
-    background-color: #6bf5f5;
+    background-color: $main-color;
     padding: 25px 16px ;
 
 }
@@ -75,16 +80,17 @@ a{
     justify-content: flex-end;
     padding: 0;
 }
-.menu__item a,li{
-    color: #494848;
-    font-size: 24px;
-    letter-spacing: 1px;
-    line-height: 1.25;
-    font-family: "Open Sans", sans-serif;
-      
-}
+
 .menu__item{
     padding-left: 16px;
+}    
+.menu__item a,li{
+        color: #494848;
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 1.25;
+        font-family: "Open Sans", sans-serif;
+          
 }
 .menu__item:first-child a{
     color: #fff;
@@ -92,7 +98,7 @@ a{
 .services__menu{
     display: none;
     position: absolute;
-    background-color: #6bf5f5;
+    background-color: $main-color;
     border: #494848 2px solid;
     text-decoration: underline;
     z-index: 10;
@@ -109,19 +115,23 @@ a{
 
 /*банер перезвона */
 .recall{
-    background-color: #cbd4e6;
+    background-color: $bg-color;
     height: 515px;
-    position: relative;
 }
-
+.recall__content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
 .recall__img{
     height: 515px;
     overflow: hidden;
 }
 .recall__text{
     position: absolute;
-    top:118px;
-    right:16px;
+    top: 118px;
+    right: 16px;
     font-size: 24px;
     letter-spacing: 1px;
     line-height: 1.25;
@@ -164,7 +174,7 @@ a{
     outline: none;
     width: 114px;
     height: 38px;
-    background-color: #cbd4e6;
+    background-color: $bg-color;
     border: 1px solid #000;
     border-radius: 0 6px 6px 0;
     font-size: 20px;
@@ -177,7 +187,7 @@ a{
 /* преимущества */
 .advantages{
     position: relative;
-    background-color: #cbd4e6;
+    background-color: $bg-color;
 }
 .advantages__menu{
     margin: 0 auto;
@@ -232,10 +242,13 @@ a{
     text-align: center;
 }
  /* footer */
+ footer{
+    background-color: $main-color; 
+ }
 .footer{
     padding: 45px 16px;
     display: flex;
-    background-color: #6bf5f5;
+    background-color: $main-color;
     justify-content: space-between;
 }
 .form__footer{
@@ -253,18 +266,21 @@ a{
 
 
 /*foooter content*/
+.footer_content_bg{
+    background-color: $bg-color;
+}
 .footer_content{
-    display: flex;
+    display: flex;    
     justify-content: space-around;
     color: #000000;
     font-family: "Myriad Pro";
-    background-color:#e5e9f2;
+    background-color:$bg-color;
 }
 .footer_content__column{
     padding: 120px 0;
-}
-.footer_content__column a{
-    color: #9fa2a7; 
+    a{
+        color: #9fa2a7; 
+    }    
 }
 
 /*get_in_touch*/
@@ -310,27 +326,27 @@ a{
 .facebook{
     width: 16px;
     height: 26px;
-    background: url('../image/socials.png') 0 0;
+    background: url('../../image/socials.png') 0 0;
     }
 .google-plus{
     width: 34px;
     height: 26px;
-    background: url('../image/socials.png')  -42px 0;
+    background: url('../../image/socials.png')  -42px 0;
     }
 .vk{
     width: 28px;
     height: 26px;
-    background: url('../image/socials.png')  -110px 0;
+    background: url('../../image/socials.png')  -110px 0;
     }
 .youtube{
     width: 22px;
     height: 26px;
-    background: url('../image/socials.png')  -165px 0;
+    background: url('../../image/socials.png')  -165px 0;
     }
 .linkedin{
     width: 22px;
     height: 26px;
-    background: url('../image/socials.png')  -215px 0;
+    background: url('../../image/socials.png')  -215px 0;
     }    
 /*quick links and our services*/
 
@@ -344,6 +360,7 @@ a{
     letter-spacing: 1px;
     line-height: 24px;
     font-weight: bold;
+    padding-left: 0px;
     }
 .footer_content__item{
     padding-bottom: 27px;
@@ -357,11 +374,12 @@ a{
 
 /*form*/
 .footer__form{
-    background-color: #e5e9f2;
+    background-color: $bg-color;
+    padding-left: 0;
 }
 .form__input_name{
     margin-top: 50px;
-    background-color: #e5e9f2;
+    background-color: $bg-color;
 }
 .footer__form_label{
     font-size: 22px;
@@ -370,7 +388,7 @@ a{
     font-weight: bold;
 }
 .form__input{
-    background-color: #e5e9f2;
+    background-color: $bg-color;
     font-family: "Myriad Pro";
     font-weight: bold;
     color: #b2b5bc;
@@ -403,10 +421,10 @@ a{
 }
 
 .footer__copyright{
+    text-align: center;
     font-size: 13px;
     letter-spacing: 0px;
     line-height: 24px;
     color: #e5e9f2;
     font-family: "Myriad Pro";
-    margin: 0 auto;
 }

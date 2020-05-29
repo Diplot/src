@@ -13,79 +13,86 @@
 </head>
 <body>
     <header class="header" aria-label="шапка сайта">
-            <div class="header__brand"  aria-label="логотип сайта">
-                <div class="brand" role="banner">
-                    <div><img class="brand__img" src="image/logo.png" alt="логотип центра записи"></div>
-                    <div class="brand__name"><p>Единый <br> Центр записи</p></div>
+            <div class="container">
+                <div class="header__brand"  aria-label="логотип сайта">
+                    <div class="brand" role="banner">
+                        <div><img class="brand__img" src="image/logo.png" alt="логотип центра записи"></div>
+                        <div class="brand__name"><p>Единый <br> Центр записи</p></div>
+                    </div>
+                    <a href="tel:803005000" class="brand__phone" aria-label="номер телефона горячей линии"><i class="fas fa-phone-square-alt"></i> 80300 5000</a>              
                 </div>
-                <a href="tel:803005000" class="brand__phone" aria-label="номер телефона горячей линии"><i class="fas fa-phone-square-alt"></i> 80300 5000</a>              
+                <nav class="header__menu" role="navigation" aria-label="меню навигации">
+                    <ul class="menu" role="list" aria-label="виды услуг">
+                        <li role="listitem" class="menu__item"><a href="#">Главная</a></li>
+                        <li role="listitem" class="menu__item services">Услуги <img src="image/arrow-down.png" alt="Стелка вниз">
+                            <div class="services__menu">
+                                <a href="#">МРТ</a>
+                                <a href="#">КТ</a>
+                                <a href="#">Рентген</a>
+                            </div>
+                        </li> 
+                        <li role="listitem" class="menu__item"><a href="clinic.html">Клиники и кабинеты</a></li>
+                        <li role="listitem" class="menu__item"><a href="#">О нас</a></li>
+                        <li role="listitem" class="menu__item"><a href="#">Статьи</a></li>
+                        <li role="listitem" class="menu__item"><a href="#">FAQ</a></li>
+                        <li role="listitem" class="menu__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header__menu" role="navigation" aria-label="меню навигации">
-                <ul class="menu" role="list" aria-label="виды услуг">
-                    <li role="listitem" class="menu__item"><a href="#">Главная</a></li>
-                    <li role="listitem" class="menu__item services">Услуги <img src="image/arrow-down.png" alt="Стелка вниз">
-                        <div class="services__menu">
-                            <a href="#">МРТ</a>
-                            <a href="#">КТ</a>
-                            <a href="#">Рентген</a>
-                        </div>
-                    </li> 
-                    <li role="listitem" class="menu__item"><a href="clinic.html">Клиники и кабинеты</a></li>
-                    <li role="listitem" class="menu__item"><a href="#">О нас</a></li>
-                    <li role="listitem" class="menu__item"><a href="#">Статьи</a></li>
-                    <li role="listitem" class="menu__item"><a href="#">FAQ</a></li>
-                    <li role="listitem" class="menu__item"><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
     </header>
 
     <section class="recall" role="banner" aria-label="баннер">
-            <div class="recall__img"><img src="image/doc.png" alt="улыбающийся врач" role="img" alt="фоновое изображение баннера"></div>
-            <div class="recall__content"></div>
+        <div class="container">
+            <div class="recall__content">
+                <div class="recall__img"><img src="image/doc.jpg" alt="улыбающийся врач" role="img" alt="фоновое изображение баннера"></div>
                 <div class="recall__text">
-                    <p class="recall__text-p">
-                        Всю необходимую информацию о том, как и в каком центре<br>
-                        сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
-                        Вас клиники, цены на диагностику и порядок прохождения<br>
-                        процедур, а также записаться на исследование можно по<br>
-                        телефону <span>8 (812) 385-77-56 </span>                    
-                    </p>
-                    <form action="" class="recall__form" role="form" aria-label="форма перезвона">
-                        <label for="recall__phone" class="form-title">Оставьте свой номер, а мы <br class="form-title__br">Вам перезвоним<br></label>
-                        <input id="recall__phone" class="recall__input" type="tel" maxlength="13" autocomplete="none" placeholder="+380"
-                                        pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
-                        <button class="recall__button" type="submit" role="button" aria-label="кнопка отправки номера телефона на перезвон">Отправить</button>
-                    </form>
+                        <p class="recall__text-p">
+                            Всю необходимую информацию о том, как и в каком центре<br>
+                            сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
+                            Вас клиники, цены на диагностику и порядок прохождения<br>
+                            процедур, а также записаться на исследование можно по<br>
+                            телефону <span>8 (812) 385-77-56 </span>                    
+                        </p>
+                        <form action="" class="recall__form" role="form" aria-label="форма перезвона">
+                            <label for="recall__phone" class="form-title">Оставьте свой номер, а мы <br class="form-title__br">Вам перезвоним<br></label>
+                            <input id="recall__phone" class="recall__input" type="tel" maxlength="13" autocomplete="none" placeholder="+380"
+                                            pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
+                            <button class="recall__button" type="submit" role="button" aria-label="кнопка отправки номера телефона на перезвон">Отправить</button>
+                        </form>
                 </div>
+            </div>                
+        </div>            
     </section>
 
     <section class="advantages">
-        <nav class="advantages__menu">
-            <div class="cube best_treatment">
-                <figure class="cube__circle"><img src="image/stethoscope.png" alt="схематическое изображение стетоскопа"></figure>
-                <h3>Best Treatment</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-            </div>
-
-            <div class="cube emergency_help">
-                <figure class="cube__circle"><img src="image/emergency_help.png" alt="схематическое изображение трубки телефона звонящей в клинику">
-                </figure>
-                <h3>Emergency Help</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-            </div>
-
-            <div class="cube medical_staff">
-                <figure class="cube__circle"><img src="image/medical_staff.png" alt="схематическое изображение медицинского работника"></figure>
-                <h3>Medical Staff</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-            </div>
-
-            <div class="cube qualified_doctors">
-                <figure class="cube__circle"><img src="image/car.png" alt="схематическое изображение машины скорой помощи"></figure>
-                <h3>Qualified Doctors</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="advantages__menu">
+                <div class="cube best_treatment">
+                    <figure class="cube__circle"><img src="image/stethoscope.png" alt="схематическое изображение стетоскопа"></figure>
+                    <h3>Best Treatment</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+    
+                <div class="cube emergency_help">
+                    <figure class="cube__circle"><img src="image/emergency_help.png" alt="схематическое изображение трубки телефона звонящей в клинику">
+                    </figure>
+                    <h3>Emergency Help</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+    
+                <div class="cube medical_staff">
+                    <figure class="cube__circle"><img src="image/medical_staff.png" alt="схематическое изображение медицинского работника"></figure>
+                    <h3>Medical Staff</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+    
+                <div class="cube qualified_doctors">
+                    <figure class="cube__circle"><img src="image/car.png" alt="схематическое изображение машины скорой помощи"></figure>
+                    <h3>Qualified Doctors</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+            </nav>
+        </div>
     </section>
 <!--
     <div id="tabs">
@@ -230,88 +237,96 @@
     </section>
 -->    
     <footer>
-        <div class="footer">
-            <div class="brand" role="banner">
+            <div class="container">
+                <div class="footer">
+                <div class="brand" role="banner">
                 
-                <img class="brand__img" src="image/logo.png" alt="логотип центра записи">
-                <div class="brand__name"><p class="">Единый <br> Центр записи</p></div>
-        </div>    
-            <form action="" class="form__footer">
-                <label for="footer-recall" class="form__footer-title">Заказать звонок:<br></label>
-                <input type="tel" id="footer-recall" class="recall__input" maxlength="13" autocomplete="none" placeholder="+380"
-                    pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
-                <button type="submit" class="recall__button">Отправить</button>
-            </form>
+                    <img class="brand__img" src="image/logo.png" alt="логотип центра записи">
+                    <div class="brand__name"><p class="">Единый <br> Центр записи</p></div>
+            </div>    
+                <form action="" class="form__footer">
+                    <label for="footer-recall" class="form__footer-title">Заказать звонок:<br></label>
+                    <input type="tel" id="footer-recall" class="recall__input" maxlength="13" autocomplete="none" placeholder="+380"
+                        pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>
+                    <button type="submit" class="recall__button">Отправить</button>
+                </form>
+            </div>
         </div>
         
-        <section class="footer_content">
-            <div class="footer_content__column">
-                <ul class="footer_content__heading">Get in Touch
-                    <li class="list__item">
-                        <img class="list__item_mail" src="image/envelope.png" alt="значок конверта">
-                        <div class="list__item_column">
-                            <a href="mailto:free@psdfreebies.com">free@psdfreebies.com</a> 
-                            <a href="mailto:free@psdfreebies.com">free@psdfreebies.com</a>
-                        </div>
-                    </li>
-
-                    <li class="list__item">
-                        <img class="list__item_phone" src="image/mobile.png" alt="значок мобильного телефона">
-                        <div class="list__item_column">
-                            <a href="tel:+1234567890">+123 456 7890</a>                        
-                            <a href="tel:+1234567890">+123 456 7890</a>
-                        </div>
-                        
-                    </li>
-                    <li class="list__item">
-                        <img class="list__item_map" src="image/map.png" alt="значок карты">
-                        <div class="list__item_column">
-                            <a href="https://www.google.com/maps/@48.4617838,35.0518051,20z">123, Main Road, New City,<br>My Country 123456</a>
-                        </div>
-                    </li>
-                    <li class="list__item">
-                        <div class="list__item_row">
-                            <a class="list__item_social" href="#"><div class="facebook"></div></a>
-                            <a class="list__item_social" href="#"><div class="google-plus"></div></a>
-                            <a class="list__item_social" href="#"><div class="vk"></div></a>
-                            <a class="list__item_social" href="#"><div class="youtube"></div></a>
-                            <a class="list__item_social" href="#"><div class="linkedin"></div></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer_content__column">
-                <ul class="footer_content__heading">Quick Links
-                    <li class="footer_content__item"><a class="arrow" href="#">About us</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Blog</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Contact us</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Faq</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Insurance</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="footer_content__column">
-                <ul class="footer_content__heading">Our Services
-                    <li class="footer_content__item"><a class="arrow" href="#">Work Injuries</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Sport Injuries</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Cold Laser Therapy</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Massage Therapy</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Physiotherapy</a></li>
-                    <li class="footer_content__item"><a class="arrow" href="#">Chiropratic Therapy</a></li>
-                </ul>
-            </div>
-            <div class="footer_content__column">
-                <form action="" class="footer__form">
-                    <label class="footer__form_label" for="footer__form">Enquiry Form</label>
-                    <p><input class="form__input form__input_name" id="footer__form" type="text" placeholder="Name" required></p>
-                    <p><input class="form__input" type="tel" placeholder="Phone" required></p>
-                    <p><textarea class="form__input" name="comment" cols="40" rows="5" placeholder="Message" required></textarea></p>
-                    <input class="footer__form_button" type="submit" value="SUBMIT">
-                </form>
+        <section class="footer_content_bg">
+            <div class="container">
+                <div class="footer_content">
+                    <div class="footer_content__column">
+                        <ul class="footer_content__heading">Get in Touch
+                            <li class="list__item">
+                                <img class="list__item_mail" src="image/envelope.png" alt="значок конверта">
+                                <div class="list__item_column">
+                                    <a href="mailto:free@psdfreebies.com">free@psdfreebies.com</a> 
+                                    <a href="mailto:free@psdfreebies.com">free@psdfreebies.com</a>
+                                </div>
+                            </li>
+        
+                            <li class="list__item">
+                                <img class="list__item_phone" src="image/mobile.png" alt="значок мобильного телефона">
+                                <div class="list__item_column">
+                                    <a href="tel:+1234567890">+123 456 7890</a>                        
+                                    <a href="tel:+1234567890">+123 456 7890</a>
+                                </div>
+                                
+                            </li>
+                            <li class="list__item">
+                                <img class="list__item_map" src="image/map.png" alt="значок карты">
+                                <div class="list__item_column">
+                                    <a href="https://www.google.com/maps/@48.4617838,35.0518051,20z">123, Main Road, New City,<br>My Country 123456</a>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="list__item_row">
+                                    <a class="list__item_social" href="#"><div class="facebook"></div></a>
+                                    <a class="list__item_social" href="#"><div class="google-plus"></div></a>
+                                    <a class="list__item_social" href="#"><div class="vk"></div></a>
+                                    <a class="list__item_social" href="#"><div class="youtube"></div></a>
+                                    <a class="list__item_social" href="#"><div class="linkedin"></div></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_content__column">
+                        <ul class="footer_content__heading">Quick Links
+                            <li class="footer_content__item"><a class="arrow" href="#">About us</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Blog</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Contact us</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Faq</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Insurance</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_content__column">
+                        <ul class="footer_content__heading">Our Services
+                            <li class="footer_content__item"><a class="arrow" href="#">Work Injuries</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Sport Injuries</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Cold Laser Therapy</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Massage Therapy</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Physiotherapy</a></li>
+                            <li class="footer_content__item"><a class="arrow" href="#">Chiropratic Therapy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_content__column">
+                        <form action="" class="footer__form">
+                            <label class="footer__form_label" for="footer__form">Enquiry Form</label>
+                            <p><input class="form__input form__input_name" id="footer__form" type="text" placeholder="Name" required></p>
+                            <p><input class="form__input" type="tel" placeholder="Phone" required></p>
+                            <p><textarea class="form__input" name="comment" cols="40" rows="5" placeholder="Message" required></textarea></p>
+                            <input class="footer__form_button" type="submit" value="SUBMIT">
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         <div class="footer">
-            <p class="footer__copyright">Copyright © 2017.</p>
+            <div class="container">                
+                <p class="footer__copyright">Copyright © 2017.</p>
+            </div>
         </div>
     </footer>
 

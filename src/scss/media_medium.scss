@@ -1,4 +1,8 @@
 @media (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
     header{
         padding: 16px;
     }
@@ -20,9 +24,7 @@
         top: 36px;
         padding: 8px;
     }
-    .recall__content{
-
-        position: absolute;
+    .recall__text{
         top:16px;
         padding: 0;
     }
@@ -49,14 +51,9 @@
    
     .footer_content{
         flex-wrap: wrap;
-        justify-content: center;
     }
     .footer_content__column{
-        padding: 20px 0;
-        width: 50%;
-        justify-content: center;
-    }
-    .footer__form{
-        padding-left: 40px;
-    }   
+        padding: 20px 20px;
+        width: 40%;
+    } 
  }
