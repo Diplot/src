@@ -36,7 +36,7 @@ a{
     src: url(../../font/tahoma.ttf);
 }
 
-$main-color: #6bf5f5;
+$main-color: #6bf5f5;   
 $bg-color: #cbd4e6;
 
 /*шапка*/
@@ -44,163 +44,192 @@ $bg-color: #cbd4e6;
     background-color: $main-color;
     padding: 25px 16px ;
 
-}
-.header__brand{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    &__brand{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 .brand{
     display: flex;
-}
-.brand__name{
-    color: #fff;
-    padding-left: 16px;
-    display: flex;
-    align-items: stretch;
-    font-size: 24px;
-    line-height: 1.25;
-    letter-spacing: 1px;
-    font-family: "Yeseva one";
-    filter: drop-shadow(0px 6px 7px rgba(0,0,0,0.35)); 
-}
-.brand__phone{
-    align-self: start;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    font-family: "Tahoma";
-    font-weight: bold;
-    filter: drop-shadow(0px 6px 7px rgba(0,0,0,0.35));
-}
 
+    &__name{
+        color: #fff;
+        padding-left: 16px;
+        display: flex;
+        align-items: stretch;
+        font-size: 24px;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        font-family: "Yeseva one";
+        filter: drop-shadow(0px 6px 7px rgba(0,0,0,0.35)); 
+    }
+    &__phone{
+        align-self: start;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-family: "Tahoma";
+        font-weight: bold;
+        filter: drop-shadow(0px 6px 7px rgba(0,0,0,0.35));
+    }
+}
 .menu{
     display: flex;
     justify-content: flex-end;
     padding: 0;
+    
+
+    &__item{
+        padding-left: 16px;
+    }    
+    &__item a,li{
+            color: #494848;
+            font-size: 24px;
+            letter-spacing: 1px;
+            line-height: 1.25;
+            font-family: "Open Sans", sans-serif;
+            
+    }
+    &__item:first-child a{
+        color: #fff;
+    }
 }
 
-.menu__item{
-    padding-left: 16px;
-}    
-.menu__item a,li{
-        color: #494848;
-        font-size: 24px;
-        letter-spacing: 1px;
-        line-height: 1.25;
-        font-family: "Open Sans", sans-serif;
-          
-}
-.menu__item:first-child a{
-    color: #fff;
-}
-.services__menu{
-    display: none;
-    position: absolute;
-    background-color: $main-color;
-    border: #494848 2px solid;
-    text-decoration: underline;
-    z-index: 10;
-}
 .services{
     position: relative;
-}
-.services:hover  .services__menu{
-    display: flex;
-    flex-direction: column;
 
-}
+    &__menu{
+        display: none;
+        position: absolute;
+        background-color: $main-color;
+        border: #494848 2px solid;
+        text-decoration: underline;
+        z-index: 10;
+    }
+    .services:hover  &__menu{
+        display: flex;
+        flex-direction: column;
 
+    }
+}
 
 /*банер перезвона */
 .recall{
     background-color: $bg-color;
     height: 515px;
-}
-.recall__content{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    
-}
-.recall__img{
-    height: 515px;
-    overflow: hidden;
-}
-.recall__text{
-    position: absolute;
-    top: 118px;
-    right: 16px;
-    font-size: 24px;
-    letter-spacing: 1px;
-    line-height: 1.25;
-    color: #494848;
-    font-family: "Calibri";
-    text-align: right;
 
-}
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+    &__img{
+        height: 515px;
+        overflow: hidden;
+    }
+    &__text{
+        position: absolute;
+        top: 118px;
+        right: 16px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 1.25;
+        color: #494848;
+        font-family: "Calibri";
+        text-align: right;
 
-.recall__form{
-   margin-top: 40px;
-   position: relative;
-}
-.form-title{
-   margin-top: 40px;
-   font-size: 36px;
-   letter-spacing: 2px;
-   line-height: 36px;
-   color: #494848;
-   font-family: "Myriad Pro";
-   font-weight: bold;
-   text-align: right;
-}
-  
-.recall__input{
+    }
+
+    &__form{
     margin-top: 40px;
-    border-radius: 6px 0 0 6px;
-    height: 32px;
-    width: 226px;
-    padding-left: 16px;
-    color: #7a749d;
-    font-family: "Calibri";
-    font-size: 20px;
     position: relative;
-    right: -5px;
+    }
+    .form-title{
+    margin-top: 40px;
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 36px;
+    color: #494848;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    text-align: right;
+    }
+    
+    &__input{
+        margin-top: 40px;
+        border-radius: 6px 0 0 6px;
+        height: 32px;
+        width: 226px;
+        padding-left: 16px;
+        color: #7a749d;
+        font-family: "Calibri";
+        font-size: 20px;
+        position: relative;
+        right: -5px;
 
 
+    }
+    &__button{
+        outline: none;
+        width: 114px;
+        height: 38px;
+        background-color: $bg-color;
+        border: 1px solid #000;
+        border-radius: 0 6px 6px 0;
+        font-size: 20px;
+        color: #7a749d;
+        font-family: "Calibri";
+        font-weight: 600;
+    }
 }
-.recall__button{
-    outline: none;
-    width: 114px;
-    height: 38px;
-    background-color: $bg-color;
-    border: 1px solid #000;
-    border-radius: 0 6px 6px 0;
-    font-size: 20px;
-    color: #7a749d;
-    font-family: "Calibri";
-    font-weight: 600;
-}
-
 
 /* преимущества */
 .advantages{
     position: relative;
     background-color: $bg-color;
-}
-.advantages__menu{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    
+    &__menu{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 .cube{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative; 
+    position: relative;
+
+    &__circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 68px;
+        height: 68px;
+        border-radius: 33px;
+        background-color: #ffffff;
+    }
+    h3{
+        font-size: 27px;
+        letter-spacing: -1px;
+        color: #ffffff;
+        font-family: "Myriad Pro";
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        width: 292px;
+        height: 84px;
+        font-size: 14px;
+        line-height: 27px;
+        color: #ffffff;
+        font-family: "Myriad Pro";
+        text-align: center;
+    }
 }
 .best_treatment{
     background-color: #43b1d2;
@@ -215,32 +244,7 @@ $bg-color: #cbd4e6;
     background-color: #37c3a8;
 
 }
-.cube__circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 68px;
-    height: 68px;
-    border-radius: 33px;
-    background-color: #ffffff;
-}
-.cube h3{
-    font-size: 27px;
-    letter-spacing: -1px;
-    color: #ffffff;
-    font-family: "Myriad Pro";
-    font-weight: bold;
-    text-align: center;
-}
-.cube p{
-    width: 292px;
-    height: 84px;
-    font-size: 14px;
-    line-height: 27px;
-    color: #ffffff;
-    font-family: "Myriad Pro";
-    text-align: center;
-}
+
  /* footer */
  footer{
     background-color: $main-color; 
@@ -250,78 +254,136 @@ $bg-color: #cbd4e6;
     display: flex;
     background-color: $main-color;
     justify-content: space-between;
+    &__copyright{
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        color: #e5e9f2;
+        font-family: "Myriad Pro";
+    }
+
+    &__form{
+        background-color: $bg-color;
+        padding-left: 0;
+    
+        &_label{
+            font-size: 22px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            font-weight: bold;
+        }
+        &_button{
+            margin-top: 25px;
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+            background-color: #0082b7;
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            font-family: "Lato";
+            font-weight: 700;
+            text-align: center;
+            width: 136px;
+            height: 36px;
+            border: none;
+        }        
+    }
 }
 .form__footer{
     justify-content: center;
+    
+    &-title{
+        font-size: 24px;
+        color: #ffffff;
+        font-family: "Calibri";
+        font-weight: bold;
+    }
+    .recall__input{
+        margin-top: 0;
+    }
 }
-.form__footer-title{
-    font-size: 24px;
-    color: #ffffff;
-    font-family: "Calibri";
-    font-weight: bold;
-}
-.form__footer .recall__input{
-    margin-top: 0;
-}
-
 
 /*foooter content*/
-.footer_content_bg{
-    background-color: $bg-color;
-}
+
 .footer_content{
+    &_bg{
+        background-color: $bg-color;
+    }
     display: flex;    
     justify-content: space-around;
     color: #000000;
     font-family: "Myriad Pro";
     background-color:$bg-color;
-}
-.footer_content__column{
-    padding: 120px 0;
-    a{
-        color: #9fa2a7; 
-    }    
-}
 
-/*get_in_touch*/
-.list__item:first-child{
-    padding-top: 70px;
+    &__column{
+        padding: 120px 0;
+        a{
+            color: #9fa2a7; 
+        }    
+    }
+    &__heading{
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        font-weight: bold;
+        padding-left: 0px;
+        }
+    &__item{
+        padding-bottom: 27px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        
+            &:first-child{
+            margin-top: 70px;
+            }
+        }
 }
+/*get_in_touch*/
+
 .list__item{
     display: flex;
     align-items: center;
     padding-bottom: 60px;
-}
-.list__item_mail{
-    width: 40px;
-    height: 31px;
-}
-.list__item_phone{
-    width: 27px;
-    height: 40px;
-    padding-right: 13px;
-}
-.list__item_map{
-    width: 38px;
-    height: 40px;
-    padding-right: 2px;
-}
-.list__item:last-child{
-    padding-bottom: 0;
-}    
-.list__item_column{
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    line-height: 24px;
-}
-.list__item_social{
-    padding-right: 30px;
-}
-.list__item_row{
-    display: inline-flex;
-    flex-direction: row;
+
+    &:first-child{
+        padding-top: 70px;
+    }
+
+    &_mail{
+        width: 40px;
+        height: 31px;
+    }
+    &_phone{
+        width: 27px;
+        height: 40px;
+        padding-right: 13px;
+    }
+    &_map{
+        width: 38px;
+        height: 40px;
+        padding-right: 2px;
+    }
+    &:last-child{
+        padding-bottom: 0;
+    }    
+    &_column{
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_social{
+        padding-right: 30px;
+    }
+    &_row{
+        display: inline-flex;
+        flex-direction: row;
+    }
 }
 .facebook{
     width: 16px;
@@ -355,38 +417,8 @@ $bg-color: #cbd4e6;
     color: blue;
     padding-right: 21px;
 }
-.footer_content__heading{
-    font-size: 22px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    font-weight: bold;
-    padding-left: 0px;
-    }
-.footer_content__item{
-    padding-bottom: 27px;
-    font-size: 16px;
-    letter-spacing: 0px;
-    ;
-}
-.footer_content__item:first-child{
-    margin-top: 70px;
-}
 
 /*form*/
-.footer__form{
-    background-color: $bg-color;
-    padding-left: 0;
-}
-.form__input_name{
-    margin-top: 50px;
-    background-color: $bg-color;
-}
-.footer__form_label{
-    font-size: 22px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    font-weight: bold;
-}
 .form__input{
     background-color: $bg-color;
     font-family: "Myriad Pro";
@@ -400,31 +432,9 @@ $bg-color: #cbd4e6;
     letter-spacing: 0px;
     width: 230px;
     padding: 20px 0;
-}
-.footer__form_button{
-    margin-top: 25px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    background-color: #0082b7;
-    font-size: 14px;
-    letter-spacing: 0px;
-    color: #ffffff;
-    font-family: "Lato";
-    font-weight: 700;
-    text-align: center;
-    width: 136px;
-    height: 36px;
-    border: none;
-}
-
-.footer__copyright{
-    text-align: center;
-    font-size: 13px;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: #e5e9f2;
-    font-family: "Myriad Pro";
+    
+    &_name{
+        margin-top: 50px;
+        background-color: $bg-color;
+    }
 }
