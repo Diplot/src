@@ -1,4 +1,3 @@
-
-window.onload = () => {
-  console.log('log');
-};
+$(document).ready( function(){
+    console.log('app started');
+  });
