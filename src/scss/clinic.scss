@@ -1,72 +1,85 @@
 
+$chet: 4px;
+$nechet: 2px;
+/*$clinic__border_color: red ;*/
+@for $i from 1 through 5 {
+    .item-#{$i} { @if ($i % 2 == 0) {border: $chet solid  rgba(random(255),random(255),random(255), $alpha: 1.0)} 
+                @else if ($i % 2 == 1) {border:$nechet solid  rgba(random(255),random(255),random(255), $alpha: 1.0)}
+  }
+}
 /*-----------------------------Шаблон карты клиники------------------------------------*/
 .clinic{
+    margin: 10px;
     padding: 30px 20px 10px 20px;
     width: 690px;
     height: 285px;
-    border: 3px solid  #43b1d2;
-}
-.clinic__card{
-    display: flex;
-    justify-content: space-between;
-}
+    
+   
 
-.clinic__img{
-    width: 196px;
-    height: 51px;
-}
-.clinic__info{    
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-}
-.clinic__info_name{
-    font-size: 36px;
-    color: #494848;
-    font-family: "Calibri";
-    font-weight: bold;
+    &__card{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img{
+        width: 196px;
+        height: 51px;
+    }
+    &__info{    
+        display: flex;
+        flex-direction: column;
+        text-align: right;
     
-}
-.clinic__info_address{
-    padding: 0 0 76px 0;
-    font-size: 16px;
-    line-height: 14px;
-    color: #43b1d2;
-    font-family: "Calibri";
-    font-style: italic;
-    
-}
-.clinic__text{
-    font-size: 19px;
-    line-height: 17px;
-    color: #494848;
-    font-family: "Calibri";
-    padding-bottom: 30px;
-}
-.clinic__bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.clinic__phone_number{
-    font-size: 19px;
-    line-height: 17px;
-    color: #494848;
-    font-family: "Calibri";
-    font-weight: bold;
-    
-}
-.clinic__button{
-    width: 175px;
-    height: 45px;
-    font-size: 20px;
-    color: #fff;
-    font-family: "Calibri";
-    background-color: #37c3a8;
-    border: none;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+        &_name{
+            font-size: 36px;
+            color: #494848;
+            font-family: "Calibri";
+            font-weight: bold;
+            
+        }
+        &_address{
+            padding: 0 0 76px 0;
+            font-size: 16px;
+            line-height: 14px;
+            color: #43b1d2;
+            font-family: "Calibri";
+            font-style: italic;
+            
+        }
+    }
+    &__text{
+        font-size: 19px;
+        line-height: 17px;
+        color: #494848;
+        font-family: "Calibri";
+        padding-bottom: 30px;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone_number{
+        font-size: 19px;
+        line-height: 17px;
+        color: #494848;
+        font-family: "Calibri";
+        font-weight: bold;
+        
+    }
+    &__button{
+        
+        width: 175px;
+        height: 45px;
+        font-size: 20px;
+        color: #fff;
+        font-family: "Calibri";
+        background-color: #37c3a8;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
 }

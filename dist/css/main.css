@@ -971,69 +971,76 @@ footer {
   .form__footer-title br {
     display: none; } }
 
+/*$clinic__border_color: red ;*/
+.item-1 {
+  border: 2px solid #e824ab; }
+
+.item-2 {
+  border: 4px solid #56d998; }
+
+.item-3 {
+  border: 2px solid #5ffcdd; }
+
+.item-4 {
+  border: 4px solid #a02444; }
+
+.item-5 {
+  border: 2px solid #282136; }
+
 /*-----------------------------Шаблон карты клиники------------------------------------*/
 .clinic {
+  margin: 10px;
   padding: 30px 20px 10px 20px;
   width: 690px;
-  height: 285px;
-  border: 3px solid  #43b1d2; }
-
-.clinic__card {
-  display: flex;
-  justify-content: space-between; }
-
-.clinic__img {
-  width: 196px;
-  height: 51px; }
-
-.clinic__info {
-  display: flex;
-  flex-direction: column;
-  text-align: right; }
-
-.clinic__info_name {
-  font-size: 36px;
-  color: #494848;
-  font-family: "Calibri";
-  font-weight: bold; }
-
-.clinic__info_address {
-  padding: 0 0 76px 0;
-  font-size: 16px;
-  line-height: 14px;
-  color: #43b1d2;
-  font-family: "Calibri";
-  font-style: italic; }
-
-.clinic__text {
-  font-size: 19px;
-  line-height: 17px;
-  color: #494848;
-  font-family: "Calibri";
-  padding-bottom: 30px; }
-
-.clinic__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.clinic__phone_number {
-  font-size: 19px;
-  line-height: 17px;
-  color: #494848;
-  font-family: "Calibri";
-  font-weight: bold; }
-
-.clinic__button {
-  width: 175px;
-  height: 45px;
-  font-size: 20px;
-  color: #fff;
-  font-family: "Calibri";
-  background-color: #37c3a8;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px; }
+  height: 285px; }
+  .clinic__card {
+    display: flex;
+    justify-content: space-between; }
+  .clinic__img {
+    width: 196px;
+    height: 51px; }
+  .clinic__info {
+    display: flex;
+    flex-direction: column;
+    text-align: right; }
+    .clinic__info_name {
+      font-size: 36px;
+      color: #494848;
+      font-family: "Calibri";
+      font-weight: bold; }
+    .clinic__info_address {
+      padding: 0 0 76px 0;
+      font-size: 16px;
+      line-height: 14px;
+      color: #43b1d2;
+      font-family: "Calibri";
+      font-style: italic; }
+  .clinic__text {
+    font-size: 19px;
+    line-height: 17px;
+    color: #494848;
+    font-family: "Calibri";
+    padding-bottom: 30px; }
+  .clinic__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .clinic__phone_number {
+    font-size: 19px;
+    line-height: 17px;
+    color: #494848;
+    font-family: "Calibri";
+    font-weight: bold; }
+  .clinic__button {
+    width: 175px;
+    height: 45px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Calibri";
+    background-color: #37c3a8;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; }
