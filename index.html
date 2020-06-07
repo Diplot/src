@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Единый центр записи</title>
-    <script src="https://kit.fontawesome.com/a44f6b2d07.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/a44f6b2d07.js" crossorigin="anonymous"></script> 
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css"> -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Yeseva+One&display=swap" rel="stylesheet">
@@ -24,7 +26,7 @@
                 <nav class="header__menu" role="navigation" aria-label="меню навигации">
                     <ul class="menu" role="list" aria-label="виды услуг">
                         <li role="listitem" class="menu__item"><a href="#">Главная</a></li>
-                        <li role="listitem" class="menu__item services">Услуги <img src="image/arrow-down.png" alt="Стелка вниз">
+                        <li role="listitem" class="menu__item services"><a href="#">Услуги <img src="image/arrow-down.png" alt="Стелка вниз"></a>
                             <div class="services__menu">
                                 <a href="#">МРТ</a>
                                 <a href="#">КТ</a>
@@ -94,92 +96,447 @@
             </nav>
         </div>
     </section>
-<!--
-    <div id="tabs">
-        <ul>
-            <li><a href="#tab-mrt">МРТ</a></li>
-            <li><a href="#tab-ct">КТ</a></li>
-            <li><a href="#tab-rentgen">РЕНТГЕН ИССЛЕДОВАНИЯ</a></li>
-        </ul>
-            <div id="tab-mrt">
-                <section>
-                    <img src="image/photo_clinic.png" alt="фото клиники">
-                    <h2>Название клиники</h2>
-                    <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
-                    <p>Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
-                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
-                            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
-                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
-                </section>
 
-                <section>
-                    <img src="image/photo_clinic.png" alt="фото клиники">
-                    <h2>Название клиники</h2>
-                    <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
-                    <p>Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
-                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
-                            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
-                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+    <div id="tabs" class="main container">
+        <nav >
+            <ul class="main__nav">
+                <li class="main__nav_link"><a href="#tabs-1" id="link-target">МРТ</a></li>
+                <li class="main__nav_link"><a href="#tabs-2">КТ</a></li>
+                <li class="main__nav_link"><a href="#tabs-3"><span class="rentgen">РЕНТГЕН</span>
+                    <span class="rentgen-full">РЕНТГЕН ИССЛЕДОВАНИЯ</span></a></li>
+              </ul>
+        </nav>
+        <div class="tabs">
+            <div id="tabs-1" >
+                <!--MRT -->
+                <section class="clinic item-1">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
                 </section>
-
-                <section>
-                    <img src="image/photo_clinic.png" alt="фото клиники">
-                    <h2>Название клиники</h2>
-                    <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
-                    <p>Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
-                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
-                            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
-                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+            
+                <section class="clinic item-2">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
                 </section>
-
-                <section>
-                    <img src="image/photo_clinic.png" alt="фото клиники">
-                    <h2>Название клиники</h2>
-                    <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
-                    <p>Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
-                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
-                            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
-                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+            
+                <section class="clinic item-3">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
                 </section>
-
-                <section>
-                    <img src="image/photo_clinic.png" alt="фото клиники">
-                    <h2>Название клиники</h2>
-                    <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
-                    <p>Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
-                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
-                            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
-                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+            
+                <section class="clinic item-4">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
                 </section>
-
-                <section>
-                    <img src="image/photo_clinic.png" alt="фото клиники">
-                    <h2>Название клиники</h2>
-                    <h5><i>Ленинский проспект, д. 160, Ленинский проспект</i></h5>
-                    <p>Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
-                            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
-                            как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
-                            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
-                    <p>Наш номер: +3856 0 99 66 65</p>
-                    <button>Заказать звонок</button>
+            
+                <section class="clinic item-5">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
                 </section>
-
-                <button>Все кабинеты</button>
+            
+                <section class="clinic item-6">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+                <button class="all_clinic">Все кабинеты</button>
             </div>
-            <div id="tab-ct"></div>
-            <div id="tab-rentgen"></div>
+    
+            <div id="tabs-2"><!--KT-->
+                <section class="clinic item-7">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-8">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-9">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-10">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-11">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-12">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+                <button class="all_clinic">Все кабинеты</button>
+            </div>
+    
+            <div id="tabs-3">
+                <!--РЕНТГЕН-->
+                <section class="clinic item-13">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-14">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-15">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-16">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-17">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="clinic item-18">
+                    <div itemscope itemtype="http://schema.org/MedicalOrganization">
+                        <div class="clinic__card" >
+                                <img  class="clinic__img" src="image/photo_clinic.png" alt="фото клиники" itemprop="image" >
+                                <div class="clinic__info">
+                                    <h5 class="clinic__info_name" itemprop="legalName">Название клиники</h5>
+                                    <div class="clinic__info_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">Ленинский проспект, д. 160,</span>
+                                        <span itemprop="addressLocality">Cанкт-Петербург</span>
+                                    </div>  
+                                </div>
+                        </div>            
+                        <p class="clinic__text" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов, <br>
+                                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,<br>
+                                как контент впоследствии будет выглядеть на готовой странице, чтобы<br>
+                                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+                        <div class="clinic__bottom">
+                            <p class="clinic__bottom_phone_number">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></p>
+                            <button class="clinic__bottom_button">Заказать звонок</button>
+                        </div>
+                    </div>
+                </section>
+                <button class="all_clinic">Все кабинеты</button>
+            </div>
+        </div>
+        
     </div>
-
+               
+       
+<!--
     <section>
         <div>
             <h1><i>Последние статьи</i></h1>

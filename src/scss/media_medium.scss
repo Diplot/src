@@ -45,8 +45,51 @@
         width: 50%;
         height: 325px;
     }
-    
-    
+    /*Clinic*/
+    .clinic{
+        padding: 16px;
+        width: 40%;
+        height: 100%;
+        
+        &__img{
+            margin: 0 auto;
+        }
+        &__info{    
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 auto;
+            &_name{
+                font-size: 22px;
+                
+            }
+            &_address{
+                padding: 0 0 16px 0;
+                font-size: 14px;
+                line-height: 12px;            
+            }
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 14px;
+            padding-bottom: 10px;
+            br{
+                display: none;
+            }
+        }
+        &__bottom{
+            
+            justify-content: center;
+            &_phone_number{
+                font-size: 19px;
+                padding:0 0 16px 0 ;          
+            }
+            
+        }
+    }
+    .rentgen {
+        display: none;
+        }
     /* footer */
    
     .footer_content{

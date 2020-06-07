@@ -82,14 +82,14 @@ $bg-color: #cbd4e6;
 
     &__item{
         padding-left: 16px;
-    }    
-    &__item a,li{
+        
+        a{
             color: #494848;
             font-size: 24px;
             letter-spacing: 1px;
             line-height: 1.25;
             font-family: "Open Sans", sans-serif;
-            
+        }    
     }
     &__item:first-child a{
         color: #fff;
@@ -146,17 +146,7 @@ $bg-color: #cbd4e6;
     margin-top: 40px;
     position: relative;
     }
-    .form-title{
-    margin-top: 40px;
-    font-size: 36px;
-    letter-spacing: 2px;
-    line-height: 36px;
-    color: #494848;
-    font-family: "Myriad Pro";
-    font-weight: bold;
-    text-align: right;
-    }
-    
+        
     &__input{
         margin-top: 40px;
         border-radius: 6px 0 0 6px;
@@ -184,7 +174,16 @@ $bg-color: #cbd4e6;
         font-weight: 600;
     }
 }
-
+.form-title{
+    margin-top: 40px;
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 36px;
+    color: #494848;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    text-align: right;
+    }
 /* преимущества */
 .advantages{
     position: relative;
