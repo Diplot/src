@@ -93,7 +93,7 @@ $odd:2px;
         color: #494848;
         font-family: "Calibri";
         padding-bottom: 30px;
-        br{
+        &_br{
             display: none;
         }
     }
@@ -108,7 +108,9 @@ $odd:2px;
             color: #494848;
             font-family: "Calibri";
             font-weight: bold;
-            a{color: #43b1d2;}
+        }
+        &_link{
+            color: #43b1d2;
         }
         &_button{ 
             width: 175px;
@@ -131,5 +133,10 @@ $odd:2px;
     margin: 50px auto;
     font-size: 22px;
     padding: 16px;
+    border-radius: 8px;
     font-family: "Calibri";
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }

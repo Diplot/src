@@ -665,58 +665,58 @@ footer {
     background-color: #cbd4e6; }
 
 .item-1 {
-  border: 2px solid #b1924c; }
+  border: 2px solid #9d99b2; }
 
 .item-2 {
-  border: 4px solid #bd1292; }
+  border: 4px solid #9dae21; }
 
 .item-3 {
-  border: 2px solid #0f5de4; }
+  border: 2px solid #41a216; }
 
 .item-4 {
-  border: 4px solid #6c9dfc; }
+  border: 4px solid #1c9003; }
 
 .item-5 {
-  border: 2px solid #41bed6; }
+  border: 2px solid #463f06; }
 
 .item-6 {
-  border: 4px solid #c8c20c; }
+  border: 4px solid #fb9665; }
 
 .item-7 {
-  border: 2px solid #e6ec7d; }
+  border: 2px solid #48765c; }
 
 .item-8 {
-  border: 4px solid #e4ed66; }
+  border: 4px solid #60b39b; }
 
 .item-9 {
-  border: 2px solid #fa56a3; }
+  border: 2px solid #d33c7a; }
 
 .item-10 {
-  border: 4px solid #f2438a; }
+  border: 4px solid #15f932; }
 
 .item-11 {
-  border: 2px solid #22b8c8; }
+  border: 2px solid #ded50b; }
 
 .item-12 {
-  border: 4px solid #e89e38; }
+  border: 4px solid #63df80; }
 
 .item-13 {
-  border: 2px solid #50a75e; }
+  border: 2px solid #101271; }
 
 .item-14 {
-  border: 4px solid #0dcc35; }
+  border: 4px solid #99c4f7; }
 
 .item-15 {
-  border: 2px solid #aa4d82; }
+  border: 2px solid #b345c7; }
 
 .item-16 {
-  border: 4px solid #98e8e6; }
+  border: 4px solid #530b0d; }
 
 .item-17 {
-  border: 2px solid #a2351f; }
+  border: 2px solid #1adcd4; }
 
 .item-18 {
-  border: 4px solid #2941e4; }
+  border: 4px solid #29a435; }
 
 #tabs-1 {
   display: flex;
@@ -909,7 +909,7 @@ footer {
     color: #494848;
     font-family: "Calibri";
     padding-bottom: 30px; }
-    .clinic__text br {
+    .clinic__text_br {
       display: none; }
   .clinic__bottom {
     display: flex;
@@ -922,8 +922,8 @@ footer {
       color: #494848;
       font-family: "Calibri";
       font-weight: bold; }
-      .clinic__bottom_phone_number a {
-        color: #43b1d2; }
+    .clinic__bottom_link {
+      color: #43b1d2; }
     .clinic__bottom_button {
       width: 175px;
       height: 45px;
@@ -943,7 +943,12 @@ footer {
   margin: 50px auto;
   font-size: 22px;
   padding: 16px;
-  font-family: "Calibri"; }
+  border-radius: 8px;
+  font-family: "Calibri";
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px; }
 
 @media (min-width: 320px) and (max-width: 575px) {
   /* шапка */
