@@ -40,16 +40,15 @@
 
     &__item{
         padding-left: 16px;
-        
-        a{
-            color: #494848;
-            font-size: 24px;
-            letter-spacing: 1px;
-            line-height: 1.25;
-            font-family: "Open Sans", sans-serif;
-        }    
+        &_link {
+        color: #494848;
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 1.25;
+        font-family: "Open Sans", sans-serif;
+        }   
     }
-    &__item:first-child a{
+    &__item:first-child &__item_link{
         color: #fff;
     }
 }
