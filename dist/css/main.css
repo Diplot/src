@@ -328,6 +328,7 @@ li {
 a {
   text-decoration: none; }
 
+/*шрифты*/
 @font-face {
   font-family: "Myriad Pro";
   src: url(../../font/myriad_pro.otf); }
@@ -340,7 +341,7 @@ a {
   font-family: "Tahoma";
   src: url(../../font/tahoma.ttf); }
 
-/*шапка*/
+/* переменные */
 .header {
   background-color: #6bf5f5;
   padding: 25px 16px; }
@@ -398,7 +399,6 @@ a {
     display: flex;
     flex-direction: column; }
 
-/*банер перезвона */
 .recall {
   background-color: #cbd4e6;
   height: 515px; }
@@ -455,59 +455,6 @@ a {
   font-weight: bold;
   text-align: right; }
 
-/* преимущества */
-.advantages {
-  position: relative;
-  background-color: #cbd4e6; }
-  .advantages__menu {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-
-.cube {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative; }
-  .cube__circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 68px;
-    height: 68px;
-    border-radius: 33px;
-    background-color: #ffffff; }
-  .cube h3 {
-    font-size: 27px;
-    letter-spacing: -1px;
-    color: #ffffff;
-    font-family: "Myriad Pro";
-    font-weight: bold;
-    text-align: center; }
-  .cube p {
-    width: 292px;
-    height: 84px;
-    font-size: 14px;
-    line-height: 27px;
-    color: #ffffff;
-    font-family: "Myriad Pro";
-    text-align: center; }
-
-.best_treatment {
-  background-color: #43b1d2; }
-
-.emergency_help {
-  background-color: #3fb6c6; }
-
-.medical_staff {
-  background-color: #3cbbbb; }
-
-.qualified_doctors {
-  background-color: #37c3a8; }
-
-/* footer */
 footer {
   background-color: #6bf5f5; }
 
@@ -667,58 +614,58 @@ footer {
     background-color: #cbd4e6; }
 
 .item-1 {
-  border: 2px solid #6d96b5; }
+  border: 2px solid #4b87aa; }
 
 .item-2 {
-  border: 4px solid #f94169; }
+  border: 4px solid #84cfd2; }
 
 .item-3 {
-  border: 2px solid #630981; }
+  border: 2px solid #6a1bf7; }
 
 .item-4 {
-  border: 4px solid #81d325; }
+  border: 4px solid #e93501; }
 
 .item-5 {
-  border: 2px solid #e5af98; }
+  border: 2px solid #c87b7e; }
 
 .item-6 {
-  border: 4px solid #1c7a13; }
+  border: 4px solid #5627f5; }
 
 .item-7 {
-  border: 2px solid #48f2d7; }
+  border: 2px solid #9ccb5c; }
 
 .item-8 {
-  border: 4px solid #5e5b84; }
+  border: 4px solid #61ba4c; }
 
 .item-9 {
-  border: 2px solid #1c96ec; }
+  border: 2px solid #140b01; }
 
 .item-10 {
-  border: 4px solid #f1ac30; }
+  border: 4px solid #33f1e0; }
 
 .item-11 {
-  border: 2px solid #738ccc; }
+  border: 2px solid #360563; }
 
 .item-12 {
-  border: 4px solid #192558; }
+  border: 4px solid #2ab0fc; }
 
 .item-13 {
-  border: 2px solid #aa775b; }
+  border: 2px solid #d01c03; }
 
 .item-14 {
-  border: 4px solid #2fd0ad; }
+  border: 4px solid #3410ee; }
 
 .item-15 {
-  border: 2px solid #33affd; }
+  border: 2px solid #558ff8; }
 
 .item-16 {
-  border: 4px solid #80c48e; }
+  border: 4px solid #7d0a62; }
 
 .item-17 {
-  border: 2px solid #47c3ef; }
+  border: 2px solid #ecef52; }
 
 .item-18 {
-  border: 4px solid #ef1fa8; }
+  border: 4px solid #fd7bef; }
 
 #tabs-1 {
   display: flex;
@@ -875,13 +822,6 @@ footer {
     border-bottom: 1px solid #fff;
     color: #494848; }
 
-.all_clinic {
-  height: 100%;
-  margin: 50px auto;
-  font-size: 22px;
-  padding: 16px;
-  font-family: "Calibri"; }
-
 /*-----------------------------Шаблон карты клиники------------------------------------*/
 .clinic {
   margin: 15px;
@@ -946,6 +886,13 @@ footer {
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px; }
+
+.all_clinic {
+  height: 100%;
+  margin: 50px auto;
+  font-size: 22px;
+  padding: 16px;
+  font-family: "Calibri"; }
 
 @media (min-width: 320px) and (max-width: 575px) {
   /* шапка */

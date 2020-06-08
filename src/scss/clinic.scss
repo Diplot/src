@@ -47,13 +47,6 @@ $odd:2px;
             color:#494848; 
         }
 }
-.all_clinic{
-    height: 100%;
-    margin: 50px auto;
-    font-size: 22px;
-    padding: 16px;
-    font-family: "Calibri";
-}
 /*-----------------------------Шаблон карты клиники------------------------------------*/
 .clinic{
     margin: 15px;
@@ -132,4 +125,11 @@ $odd:2px;
             -o-border-radius: 5px;
         }
     }
+}
+.all_clinic{
+    height: 100%;
+    margin: 50px auto;
+    font-size: 22px;
+    padding: 16px;
+    font-family: "Calibri";
 }
