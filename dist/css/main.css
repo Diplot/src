@@ -665,58 +665,58 @@ footer {
     background-color: #cbd4e6; }
 
 .item-1 {
-  border: 2px solid #9d99b2; }
+  border: 2px solid #373c3c; }
 
 .item-2 {
-  border: 4px solid #9dae21; }
+  border: 4px solid #020367; }
 
 .item-3 {
-  border: 2px solid #41a216; }
+  border: 2px solid #db3da6; }
 
 .item-4 {
-  border: 4px solid #1c9003; }
+  border: 4px solid #474233; }
 
 .item-5 {
-  border: 2px solid #463f06; }
+  border: 2px solid #3d9c2c; }
 
 .item-6 {
-  border: 4px solid #fb9665; }
+  border: 4px solid #19da66; }
 
 .item-7 {
-  border: 2px solid #48765c; }
+  border: 2px solid #7312f1; }
 
 .item-8 {
-  border: 4px solid #60b39b; }
+  border: 4px solid #020882; }
 
 .item-9 {
-  border: 2px solid #d33c7a; }
+  border: 2px solid #34cbb0; }
 
 .item-10 {
-  border: 4px solid #15f932; }
+  border: 4px solid #ce074b; }
 
 .item-11 {
-  border: 2px solid #ded50b; }
+  border: 2px solid #0116d5; }
 
 .item-12 {
-  border: 4px solid #63df80; }
+  border: 4px solid #2fe224; }
 
 .item-13 {
-  border: 2px solid #101271; }
+  border: 2px solid #7d39df; }
 
 .item-14 {
-  border: 4px solid #99c4f7; }
+  border: 4px solid #099140; }
 
 .item-15 {
-  border: 2px solid #b345c7; }
+  border: 2px solid #bba952; }
 
 .item-16 {
-  border: 4px solid #530b0d; }
+  border: 4px solid #500d28; }
 
 .item-17 {
-  border: 2px solid #1adcd4; }
+  border: 2px solid #d2149c; }
 
 .item-18 {
-  border: 4px solid #29a435; }
+  border: 4px solid #f14ede; }
 
 #tabs-1 {
   display: flex;
@@ -856,10 +856,14 @@ footer {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-bottom: 1px solid #e3e6ea; }
-
-.main__nav_link {
-  display: inline-flex; }
-  .main__nav_link a {
+  .main__nav_li {
+    display: inline-flex; }
+    .main__nav_li :focus, .main__nav_li :active {
+      margin: -1px;
+      border: 1px solid #e3e6ea;
+      border-bottom: 1px solid #fff;
+      color: #494848; }
+  .main__nav_link {
     padding: 15px;
     color: #43b1d2;
     font-size: 24px;
@@ -867,11 +871,6 @@ footer {
     font-family: "Calibri";
     font-weight: bold;
     text-align: center; }
-  .main__nav_link :focus, .main__nav_link :active {
-    margin: -1px;
-    border: 1px solid #e3e6ea;
-    border-bottom: 1px solid #fff;
-    color: #494848; }
 
 /*-----------------------------Шаблон карты клиники------------------------------------*/
 .clinic {

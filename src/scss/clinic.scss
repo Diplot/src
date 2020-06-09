@@ -28,10 +28,17 @@ $odd:2px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     border-bottom: 1px solid #e3e6ea;
-}
-.main__nav_link{
-    display: inline-flex;
-    a{
+
+    &_li{
+        display: inline-flex;
+        :focus,:active {
+                margin: -1px;
+                border: 1px solid #e3e6ea;
+                border-bottom:1px solid #fff;
+                color:#494848; 
+            }
+    }
+    &_link{
         padding: 15px;
         color:#43b1d2;
         font-size: 24px;
@@ -40,12 +47,6 @@ $odd:2px;
         font-weight: bold;
         text-align: center;
     }
-    :focus,:active {
-            margin: -1px;
-            border: 1px solid #e3e6ea;
-            border-bottom:1px solid #fff;
-            color:#494848; 
-        }
 }
 /*-----------------------------Шаблон карты клиники------------------------------------*/
 .clinic{
