@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Единый центр записи</title>
-    <script src="https://kit.fontawesome.com/a44f6b2d07.js" crossorigin="anonymous"></script> 
-    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <script src="https://kit.fontawesome.com/a44f6b2d07.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Yeseva+One&display=swap" rel="stylesheet">
@@ -18,26 +16,28 @@
             <div class="container">
                 <div class="header__brand"  aria-label="логотип сайта">
                     <div class="brand" role="banner">
-                        <div><img class="brand__img" src="image/logo.png" alt="логотип центра записи"></div>
+                        <div><img class="brand__img" src="src/scss/logo/img/logo.png" alt="логотип центра записи"></div>
                         <div class="brand__name"><p>Единый <br> Центр записи</p></div>
                     </div>
-                    <a href="tel:803005000" class="brand__phone" aria-label="номер телефона горячей линии"><i class="fas fa-phone-square-alt"></i> 80300 5000</a>              
+                    <a href="tel:803005000" class="header__brand_phone" aria-label="номер телефона горячей линии">
+                        <i class="fas fa-phone-square-alt"></i> 80300 5000</a>
                 </div>
                 <nav class="header__menu" role="navigation" aria-label="меню навигации">
                     <ul class="menu" role="list" aria-label="виды услуг">
-                        <li role="listitem" class="menu__item"><a class="menu__item_link"ref="#">Главная</a></li>
-                        <li role="listitem" class="menu__item services"><a class="menu__item_link"ref="#">Услуги <img src="image/arrow-down.png" alt="Стелка вниз"></a>
+                        <li role="listitem" class="menu__item"><a class="menu__item_link" ref="#">Главная</a></li>
+                        <li role="listitem" class="menu__item services"><a class="menu__item_link" ref="#">Услуги
+                            <img src="image/arrow-down.png" alt="Стелка вниз"></a>
                             <div class="services__menu">
-                                <a class="menu__item_link"ref="#">МРТ</a>
-                                <a class="menu__item_link"ref="#">КТ</a>
-                                <a class="menu__item_link"ref="#">Рентген</a>
+                                <a class="menu__item_link" ref="#">МРТ</a>
+                                <a class="menu__item_link" ref="#">КТ</a>
+                                <a class="menu__item_link" ref="#">Рентген</a>
                             </div>
                         </li> 
-                        <li role="listitem" class="menu__item"><a class="menu__item_link"ref="clinic.html">Клиники и кабинеты</a></li>
-                        <li role="listitem" class="menu__item"><a class="menu__item_link"ref="#">О нас</a></li>
-                        <li role="listitem" class="menu__item"><a class="menu__item_link"ref="#">Статьи</a></li>
-                        <li role="listitem" class="menu__item"><a class="menu__item_link"ref="#">FAQ</a></li>
-                        <li role="listitem" class="menu__item"><a class="menu__item_link"ref="#">Контакты</a></li>
+                        <li role="listitem" class="menu__item"><a class="menu__item_link" ref="clinic.html">Клиники и кабинеты</a></li>
+                        <li role="listitem" class="menu__item"><a class="menu__item_link" ref="#">О нас</a></li>
+                        <li role="listitem" class="menu__item"><a class="menu__item_link" ref="#">Статьи</a></li>
+                        <li role="listitem" class="menu__item"><a class="menu__item_link" ref="#">FAQ</a></li>
+                        <li role="listitem" class="menu__item"><a class="menu__item_link" ref="#">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -598,9 +598,9 @@
                 <div class="footer">
                 <div class="brand" role="banner">
                 
-                    <img class="brand__img" src="image/logo.png" alt="логотип центра записи">
+                    <img class="brand__img" src="src/scss/logo/img/logo.png" alt="логотип центра записи">
                     <div class="brand__name"><p class="">Единый <br> Центр записи</p></div>
-            </div>    
+                </div>    
                 <form action="" class="form__footer">
                     <label for="footer-recall" class="form__footer-title">Заказать звонок:<br></label>
                     <input type="tel" id="footer-recall" class="recall__input" maxlength="13" autocomplete="none" placeholder="+380"

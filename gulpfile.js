@@ -15,9 +15,20 @@ gulp.task('scss', function(){
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'));
 });
+
+gulp.task('css', () => {
+    const postcss    = require('gulp-postcss')
+    const sourcemaps = require('gulp-sourcemaps')
+
+    return gulp.src('src/**/*.css')
+        .pipe( sourcemaps.init() )
+        .pipe( postcss([ require('precss'), require('autoprefixer') ]) )
+        .pipe( sourcemaps.write('.') )
+        .pipe( gulp.dest('build/') )
+});
 gulp.task('default', gulp.series(['scss','js'],));
 
 gulp.task('watch', function(){
     gulp.watch( 'src/**/*.scss', gulp.series(['scss']));
-    gulp.watch( 'src/**/*.js', gulp.series(['js'])) 
+    gulp.watch( 'src/**/*.js', gulp.series(['js']))
 });

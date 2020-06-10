@@ -349,27 +349,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-
-.brand {
-  display: flex; }
-  .brand__name {
-    color: #fff;
-    padding-left: 16px;
-    display: flex;
-    align-items: stretch;
-    font-size: 24px;
-    line-height: 1.25;
-    letter-spacing: 1px;
-    font-family: "Yeseva one";
-    filter: drop-shadow(0px 6px 7px rgba(0, 0, 0, 0.35)); }
-  .brand__phone {
-    align-self: start;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    font-family: "Tahoma";
-    font-weight: bold;
-    filter: drop-shadow(0px 6px 7px rgba(0, 0, 0, 0.35)); }
+    .header__brand_phone {
+      align-self: start;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      font-family: "Tahoma";
+      font-weight: bold;
+      filter: drop-shadow(0px 6px 7px rgba(0, 0, 0, 0.35)); }
 
 .menu {
   display: flex;
@@ -398,6 +385,19 @@ a {
   .services:hover .services__menu {
     display: flex;
     flex-direction: column; }
+
+.brand {
+  display: flex; }
+  .brand__name {
+    color: #fff;
+    padding-left: 16px;
+    display: flex;
+    align-items: stretch;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    font-family: "Yeseva one";
+    filter: drop-shadow(0px 6px 7px rgba(0, 0, 0, 0.35)); }
 
 .recall {
   background-color: #cbd4e6;
@@ -665,58 +665,58 @@ footer {
     background-color: #cbd4e6; }
 
 .item-1 {
-  border: 2px solid #373c3c; }
+  border: 2px solid #64a401; }
 
 .item-2 {
-  border: 4px solid #020367; }
+  border: 4px solid #5d60f8; }
 
 .item-3 {
-  border: 2px solid #db3da6; }
+  border: 2px solid #776d47; }
 
 .item-4 {
-  border: 4px solid #474233; }
+  border: 4px solid #fc694e; }
 
 .item-5 {
-  border: 2px solid #3d9c2c; }
+  border: 2px solid #160b7e; }
 
 .item-6 {
-  border: 4px solid #19da66; }
+  border: 4px solid #9992a7; }
 
 .item-7 {
-  border: 2px solid #7312f1; }
+  border: 2px solid #9066ef; }
 
 .item-8 {
-  border: 4px solid #020882; }
+  border: 4px solid #9dcbdb; }
 
 .item-9 {
-  border: 2px solid #34cbb0; }
+  border: 2px solid #abfbc5; }
 
 .item-10 {
-  border: 4px solid #ce074b; }
+  border: 4px solid #f9aa60; }
 
 .item-11 {
-  border: 2px solid #0116d5; }
+  border: 2px solid #b4891d; }
 
 .item-12 {
-  border: 4px solid #2fe224; }
+  border: 4px solid #75a020; }
 
 .item-13 {
-  border: 2px solid #7d39df; }
+  border: 2px solid #96d8f3; }
 
 .item-14 {
-  border: 4px solid #099140; }
+  border: 4px solid #8480aa; }
 
 .item-15 {
-  border: 2px solid #bba952; }
+  border: 2px solid #8d5455; }
 
 .item-16 {
-  border: 4px solid #500d28; }
+  border: 4px solid #7ab69d; }
 
 .item-17 {
-  border: 2px solid #d2149c; }
+  border: 2px solid #354937; }
 
 .item-18 {
-  border: 4px solid #f14ede; }
+  border: 4px solid #3aa8de; }
 
 #tabs-1 {
   display: flex;

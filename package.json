@@ -21,6 +21,7 @@
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "npx": "^10.2.2",
+    "postcss": "^7.0.32",
     "readable-stream": "^3.6.0"
   },
   "devDependencies": {
