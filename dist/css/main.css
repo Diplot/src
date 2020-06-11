@@ -345,6 +345,12 @@ a {
 .header {
   background-color: #6bf5f5;
   padding: 25px 16px; }
+  @media (min-width: 320px) and (max-width: 991px) {
+    .header {
+      padding: 16px; } }
+  @media (min-width: 320px) and (max-width: 991px) {
+    .header__menu {
+      padding-top: 16px; } }
   .header__brand {
     display: flex;
     justify-content: space-between;
@@ -357,19 +363,47 @@ a {
       font-family: "Tahoma";
       font-weight: bold;
       filter: drop-shadow(0px 6px 7px rgba(0, 0, 0, 0.35)); }
+      @media (min-width: 320px) and (max-width: 575px) {
+        .header__brand_phone {
+          font-size: 14px; } }
 
 .menu {
   display: flex;
   justify-content: flex-end;
   padding: 0; }
+  @media (min-width: 320px) and (max-width: 991px) {
+    .menu {
+      flex-wrap: wrap;
+      justify-content: space-around; } }
+  @media (min-width: 1200px) {
+    .menu {
+      margin-top: -20px; } }
   .menu__item {
     padding-left: 16px; }
+    @media (min-width: 320px) and (max-width: 575px) {
+      .menu__item {
+        padding-left: 0; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .menu__item {
+        padding: 0 6px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .menu__item {
+        padding-left: 0; } }
     .menu__item_link {
       color: #494848;
       font-size: 24px;
       letter-spacing: 1px;
       line-height: 1.25;
       font-family: "Open Sans", sans-serif; }
+      @media (min-width: 320px) and (max-width: 575px) {
+        .menu__item_link {
+          font-size: 13px; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .menu__item_link {
+          font-size: 20px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .menu__item_link {
+          font-size: 24px; } }
   .menu__item:first-child .menu__item_link {
     color: #fff; }
 
@@ -382,6 +416,23 @@ a {
     border: #494848 2px solid;
     text-decoration: underline;
     z-index: 10; }
+    @media (min-width: 320px) and (max-width: 575px) {
+      .services__menu {
+        top: 56px;
+        left: -5px;
+        padding: 8px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .services__menu {
+        top: 36px;
+        padding: 8px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .services__menu {
+        top: 36px;
+        padding: 8px; } }
+    @media (min-width: 1200px) {
+      .services__menu {
+        top: 58px;
+        padding: 16px; } }
   .services:hover .services__menu {
     display: flex;
     flex-direction: column; }
@@ -398,18 +449,23 @@ a {
     letter-spacing: 1px;
     font-family: "Yeseva one";
     filter: drop-shadow(0px 6px 7px rgba(0, 0, 0, 0.35)); }
+    @media (min-width: 320px) and (max-width: 575px) {
+      .brand__name {
+        padding-left: 6px;
+        font-size: 16px; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .brand__img {
+      width: 40px; } }
 
 .recall {
-  background-color: #cbd4e6;
-  height: 515px; }
+  background-color: #cbd4e6; }
   .recall__content {
     display: flex;
     justify-content: space-between;
     position: relative; }
   .recall__img {
-    height: 515px;
     overflow: hidden; }
-  .recall__text {
+  .recall__main {
     position: absolute;
     top: 118px;
     right: 16px;
@@ -419,9 +475,44 @@ a {
     color: #494848;
     font-family: "Calibri";
     text-align: right; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .recall__main {
+        top: 16px;
+        left: 16px;
+        font-size: 16px;
+        color: #000; }
+        .recall__main_text {
+          background-color: #fff;
+          opacity: 0.7;
+          text-align: justify;
+          padding: 16px;
+          font-size: 16px; }
+        .recall__main_br {
+          display: none; }
+        .recall__main_span {
+          white-space: nowrap; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .recall__main {
+        top: 16px;
+        padding: 0; }
+        .recall__main_text {
+          background-color: #fff;
+          opacity: 0.7;
+          padding: 2px 8px;
+          font-size: 22px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .recall__main_text {
+        background-color: #fff;
+        opacity: 0.7;
+        font-size: 22px;
+        padding: 8px; } }
   .recall__form {
     margin-top: 40px;
     position: relative; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .recall__form {
+        text-align: center;
+        margin: 24px 0; } }
   .recall__input {
     margin-top: 40px;
     border-radius: 6px 0 0 6px;
@@ -433,6 +524,10 @@ a {
     font-size: 20px;
     position: relative;
     right: -5px; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .recall__input {
+        margin-top: 16px;
+        width: 135px; } }
   .recall__button {
     outline: none;
     width: 114px;
@@ -444,16 +539,34 @@ a {
     color: #7a749d;
     font-family: "Calibri";
     font-weight: 600; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .recall__button {
+        width: 110px;
+        background-color: #cbd4e6; } }
 
 .form-title {
   margin-top: 40px;
   font-size: 36px;
   letter-spacing: 2px;
-  line-height: 36px;
   color: #494848;
   font-family: "Myriad Pro";
   font-weight: bold;
   text-align: right; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .form-title {
+      font-size: 22px;
+      text-align: center;
+      color: #fff;
+      filter: drop-shadow(0px 0px 6px #000); } }
+  @media (min-width: 576px) and (max-width: 1199px) {
+    .form-title {
+      font-size: 30px;
+      text-align: center;
+      color: #fff;
+      filter: drop-shadow(0px 0px 6px #000); } }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .form-title__br {
+      display: none; } }
 
 .advantages {
   position: relative;
@@ -618,27 +731,27 @@ footer {
 .facebook {
   width: 16px;
   height: 26px;
-  background: url("../../image/socials.png") 0 0; }
+  background: url("../img/socials.png") 0 0; }
 
 .google-plus {
   width: 34px;
   height: 26px;
-  background: url("../../image/socials.png") -42px 0; }
+  background: url("../img/socials.png") -42px 0; }
 
 .vk {
   width: 28px;
   height: 26px;
-  background: url("../../image/socials.png") -110px 0; }
+  background: url("../img/socials.png") -110px 0; }
 
 .youtube {
   width: 22px;
   height: 26px;
-  background: url("../../image/socials.png") -165px 0; }
+  background: url("../img/socials.png") -165px 0; }
 
 .linkedin {
   width: 22px;
   height: 26px;
-  background: url("../../image/socials.png") -215px 0; }
+  background: url("../img/socials.png") -215px 0; }
 
 /*quick links and our services*/
 .arrow::before {
@@ -665,58 +778,58 @@ footer {
     background-color: #cbd4e6; }
 
 .item-1 {
-  border: 2px solid #64a401; }
+  border: 2px solid #e73f50; }
 
 .item-2 {
-  border: 4px solid #5d60f8; }
+  border: 4px solid #cf2cc6; }
 
 .item-3 {
-  border: 2px solid #776d47; }
+  border: 2px solid #98fc64; }
 
 .item-4 {
-  border: 4px solid #fc694e; }
+  border: 4px solid #a34471; }
 
 .item-5 {
-  border: 2px solid #160b7e; }
+  border: 2px solid #c0f1c8; }
 
 .item-6 {
-  border: 4px solid #9992a7; }
+  border: 4px solid #d5693b; }
 
 .item-7 {
-  border: 2px solid #9066ef; }
+  border: 2px solid #a5d592; }
 
 .item-8 {
-  border: 4px solid #9dcbdb; }
+  border: 4px solid #0ee332; }
 
 .item-9 {
-  border: 2px solid #abfbc5; }
+  border: 2px solid #81fadf; }
 
 .item-10 {
-  border: 4px solid #f9aa60; }
+  border: 4px solid #81aeed; }
 
 .item-11 {
-  border: 2px solid #b4891d; }
+  border: 2px solid #d708e3; }
 
 .item-12 {
-  border: 4px solid #75a020; }
+  border: 4px solid #d565da; }
 
 .item-13 {
-  border: 2px solid #96d8f3; }
+  border: 2px solid #098e20; }
 
 .item-14 {
-  border: 4px solid #8480aa; }
+  border: 4px solid #c2df46; }
 
 .item-15 {
-  border: 2px solid #8d5455; }
+  border: 2px solid #e4c9bc; }
 
 .item-16 {
-  border: 4px solid #7ab69d; }
+  border: 4px solid #5312e8; }
 
 .item-17 {
-  border: 2px solid #354937; }
+  border: 2px solid #301a15; }
 
 .item-18 {
-  border: 4px solid #3aa8de; }
+  border: 4px solid #597bab; }
 
 #tabs-1 {
   display: flex;
@@ -949,75 +1062,7 @@ footer {
   -ms-border-radius: 8px;
   -o-border-radius: 8px; }
 
-@media (min-width: 320px) and (max-width: 575px) {
-  /* шапка */
-  header {
-    padding: 16px; }
-  .header__menu {
-    padding-top: 16px; }
-  .brand__name {
-    padding-left: 6px;
-    font-size: 16px; }
-  .brand__img {
-    width: 40px; }
-  .brand__phone {
-    font-size: 14px; }
-  .menu {
-    flex-wrap: wrap;
-    justify-content: space-around; }
-  .menu__item {
-    padding-left: 0; }
-    .menu__item a {
-      font-size: 13px; }
-  .services__menu {
-    top: 56px;
-    left: -5px;
-    padding: 8px; }
-  /* банер перезвона*/
-  .recall {
-    background-color: #cbd4e6;
-    height: 404px;
-    position: relative; }
-  .recall__content {
-    height: 340px; }
-  .recall__img {
-    height: 404px;
-    overflow: hidden; }
-  .recall__text {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 16px;
-    color: #000; }
-  .recall__text-p {
-    background-color: #fff;
-    opacity: 0.7;
-    text-align: justify;
-    padding: 16px;
-    font-size: 16px;
-    color: #000; }
-  .recall__text-p br {
-    display: none; }
-  .recall__text span {
-    white-space: nowrap; }
-  .recall__form {
-    text-align: center;
-    margin: 24px auto;
-    width: 100%; }
-  .form-title {
-    font-size: 22px;
-    line-height: 1.2;
-    text-align: center;
-    color: #fff;
-    filter: drop-shadow(0px 0px 6px #000); }
-  .form-title__br {
-    display: none; }
-  .recall__input {
-    margin-top: 16px;
-    width: 135px; }
-  .recall__button {
-    width: 110px;
-    background-color: #cbd4e6; }
+@media (min-width: 320px) and (max-width: 576px) {
   .cube {
     width: 100%;
     height: 320px; }
@@ -1088,61 +1133,7 @@ footer {
   .footer__form {
     text-align: center; } }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  header {
-    padding: 16px; }
-  .header__menu {
-    padding-top: 16px; }
-  .menu {
-    flex-wrap: wrap;
-    justify-content: space-around; }
-  .menu__item a, li {
-    font-size: 20px; }
-  .menu__item {
-    padding: 0 6px; }
-  .services__menu {
-    top: 36px;
-    padding: 8px; }
-  .recall {
-    background-color: #cbd4e6;
-    height: 404px;
-    position: relative; }
-  .recall__img {
-    height: 404px;
-    overflow: hidden; }
-  .recall__text {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 16px;
-    color: #000; }
-  .recall__text-p {
-    background-color: #fff;
-    opacity: 0.7;
-    text-align: justify;
-    padding: 16px; }
-  .recall__text-p br {
-    display: none; }
-  .recall__text span {
-    white-space: nowrap; }
-  .recall__form {
-    text-align: center;
-    margin: 24px auto;
-    width: 100%; }
-  .form-title {
-    font-size: 30px;
-    line-height: 1;
-    text-align: center;
-    color: #fff;
-    filter: drop-shadow(0px 0px 6px #000); }
-  .form-title__br {
-    display: none; }
-  .recall__input {
-    margin-top: 16px;
-    width: 135px; }
-  .recall__button {
-    width: 110px;
-    background-color: #cbd4e6; }
+@media (min-width: 576px) and (max-width: 768px) {
   .cube {
     width: 50%;
     height: 325px; }
@@ -1218,34 +1209,6 @@ footer {
   .container {
     width: 100%;
     margin: 0 auto; }
-  header {
-    padding: 16px; }
-  .header__menu {
-    padding-top: 16px; }
-  .menu {
-    flex-wrap: wrap;
-    justify-content: space-around; }
-  .menu__item a, li {
-    font-size: 24px; }
-  .menu__item {
-    padding-left: 0; }
-  .services__menu {
-    top: 36px;
-    padding: 8px; }
-  .recall__text {
-    top: 16px;
-    padding: 0; }
-  .recall__text-p {
-    background-color: #fff;
-    opacity: 0.7;
-    padding: 2px 8px;
-    font-size: 22px; }
-  .form-title {
-    font-size: 30px;
-    line-height: 1;
-    text-align: center;
-    color: #fff;
-    filter: drop-shadow(0px 0px 6px #000); }
   .cube {
     width: 50%;
     height: 325px; }
@@ -1288,17 +1251,6 @@ footer {
     width: 40%; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .recall__text-p {
-    background-color: #fff;
-    opacity: 0.7;
-    font-size: 22px;
-    padding: 2px 8px; }
-  .form-title {
-    font-size: 30px;
-    line-height: 1;
-    text-align: center;
-    color: #fff;
-    filter: drop-shadow(0px 0px 6px #000); }
   .advantages__menu {
     justify-content: space-around; }
   .cube {
@@ -1351,11 +1303,6 @@ footer {
   .container {
     width: 100%;
     margin: 0 auto; }
-  .menu {
-    margin-top: -20px; }
-  .menu__item .services__menu {
-    top: 58px;
-    padding: 16px; }
   .cube {
     width: 25%;
     height: 325px; }
@@ -1392,11 +1339,6 @@ footer {
   .container {
     width: 1440px;
     margin: 0 auto; }
-  .menu {
-    margin-top: -20px; }
-  .menu__item .services__menu {
-    top: 58px;
-    padding: 16px; }
   .cube {
     width: 360px;
     height: 325px; }

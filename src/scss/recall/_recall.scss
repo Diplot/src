@@ -1,18 +1,14 @@
 .recall{
     background-color: $bg-color;
-    height: 515px;
-
     &__content{
         display: flex;
         justify-content: space-between;
         position: relative;
-        
     }
     &__img{
-        height: 515px;
         overflow: hidden;
     }
-    &__text{
+    &__main{
         position: absolute;
         top: 118px;
         right: 16px;
@@ -22,12 +18,52 @@
         color: #494848;
         font-family: "Calibri";
         text-align: right;
-
+        @media (min-width: 320px) and (max-width: 768px) {
+            top:16px;
+            left: 16px;
+            font-size: 16px;
+            color: #000;
+            &_text{
+                background-color: #fff;
+                opacity: 0.7;
+                text-align: justify;
+                padding: 16px;
+                font-size: 16px;
+            }
+            &_br{
+                display: none;
+            }
+            &_span{
+                white-space: nowrap;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            top:16px;
+            padding: 0;
+            &_text{
+                background-color: #fff;
+                opacity: 0.7;
+                padding: 2px 8px;
+                font-size: 22px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            &_text{
+                background-color: #fff;
+                opacity: 0.7;
+                font-size: 22px;
+                padding: 8px;
+            }
+        }
     }
 
     &__form{
         margin-top: 40px;
         position: relative;
+        @media (min-width: 320px) and (max-width: 768px) {
+            text-align: center;
+            margin: 24px 0;
+        }
     }
         
     &__input{
@@ -41,7 +77,10 @@
         font-size: 20px;
         position: relative;
         right: -5px;
-
+        @media (min-width: 320px) and (max-width: 768px) {
+            margin-top: 16px;
+            width: 135px;
+        }
 
     }
     &__button{
@@ -55,15 +94,35 @@
         color: #7a749d;
         font-family: "Calibri";
         font-weight: 600;
+        @media (min-width: 320px) and (max-width: 768px) {
+            width: 110px;
+            background-color: #cbd4e6;
+        }
     }
 }
 .form-title{
     margin-top: 40px;
     font-size: 36px;
     letter-spacing: 2px;
-    line-height: 36px;
     color: #494848;
     font-family: "Myriad Pro";
     font-weight: bold;
     text-align: right;
+    @media (min-width: 320px) and (max-width: 576px) {
+        font-size: 22px;
+        text-align: center;
+        color: #fff;
+        filter: drop-shadow(0px 0px 6px #000);
+    }
+    @media (min-width: 576px) and (max-width: 1199px) {
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        filter: drop-shadow(0px 0px 6px #000);
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+        &__br {
+            display: none;
+        }
+    }
 }
