@@ -5,10 +5,6 @@
 @import '../scss/recall/recall';
 @import'../scss/advantages/advantages';
 @import '../scss/footer/footer';
-@import 'clinic.scss';
-@import '../scss/media/media_extra-small';
-@import '../scss/media/media_small';
-@import '../scss/media/media_medium';
-@import '../scss/media/media_large';
-@import '../scss/media/media_extra-large';
-@import '../scss/media/media_xxl';
+@import 'clinics/clinic';
+@import "articals/articals";
+

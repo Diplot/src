@@ -1,0 +1,42 @@
+.articals{
+  padding: 35px 15px 40px 15px;
+  width: 810px;
+  font-family: "Calibri";
+  color: #494848;
+  &__label{
+    font-size: 36px;
+    font-style: italic;
+  }
+
+  &__figure{
+    height: 234px;
+    margin: 20px 0;
+  }
+  &__caption{
+    float: right;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 14px;
+
+
+    padding-bottom: 15px;
+  }
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+    &_nav{
+      width: 45px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+    }
+    &_read_more{
+      background-color: #37c3a8;
+      color: #fff;
+      border-radius: 6px;
+      border: none;
+    }
+
+  }
+}

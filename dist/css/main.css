@@ -342,6 +342,16 @@ a {
   src: url(../../font/tahoma.ttf); }
 
 /* переменные */
+@media (min-width: 320px) and (max-width: 1439px) {
+  .container {
+    width: 100%;
+    margin: 0 auto; } }
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto; } }
+
 .header {
   background-color: #6bf5f5;
   padding: 25px 16px; }
@@ -576,6 +586,9 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .advantages__menu {
+        justify-content: space-around; } }
 
 .cube {
   display: flex;
@@ -583,6 +596,22 @@ a {
   align-items: center;
   justify-content: center;
   position: relative; }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .cube {
+      width: 100%;
+      height: 320px; } }
+  @media (min-width: 576px) and (max-width: 1199px) {
+    .cube {
+      width: 50%;
+      height: 325px; } }
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    .cube {
+      width: 25%;
+      height: 325px; } }
+  @media (min-width: 1440px) {
+    .cube {
+      width: 360px;
+      height: 325px; } }
   .cube__circle {
     display: flex;
     justify-content: center;
@@ -591,14 +620,14 @@ a {
     height: 68px;
     border-radius: 33px;
     background-color: #ffffff; }
-  .cube h3 {
+  .cube__name {
     font-size: 27px;
     letter-spacing: -1px;
     color: #ffffff;
     font-family: "Myriad Pro";
     font-weight: bold;
     text-align: center; }
-  .cube p {
+  .cube__text {
     width: 292px;
     height: 84px;
     font-size: 14px;
@@ -627,6 +656,15 @@ footer {
   display: flex;
   background-color: #6bf5f5;
   justify-content: space-between; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .footer {
+      padding: 20px 16px;
+      flex-wrap: wrap;
+      justify-content: center; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .footer {
+      padding: 20px 16px;
+      flex-wrap: wrap; } }
   .footer__copyright {
     text-align: center;
     font-size: 13px;
@@ -637,6 +675,12 @@ footer {
   .footer__form {
     background-color: #cbd4e6;
     padding-left: 0; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .footer__form {
+        text-align: center; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .footer__form {
+        padding-left: 40px; } }
     .footer__form_label {
       font-size: 22px;
       letter-spacing: 1px;
@@ -659,28 +703,73 @@ footer {
       width: 136px;
       height: 36px;
       border: none; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .footer .brand {
+      margin: 0 auto;
+      padding-bottom: 20px; } }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .footer .brand__img {
+      width: 64px;
+      height: 57px; } }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .footer .brand__name {
+      font-size: 24px; } }
 
 .form__footer {
   justify-content: center; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .form__footer {
+      text-align: center; } }
   .form__footer-title {
     font-size: 24px;
     color: #ffffff;
     font-family: "Calibri";
     font-weight: bold; }
+    @media (min-width: 992px) {
+      .form__footer-title_br {
+        display: none; } }
   .form__footer .recall__input {
     margin-top: 0; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .form__footer .recall__input {
+        margin-top: 16px; } }
 
-/*foooter content*/
+/*footer content*/
 .footer_content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   color: #000000;
   font-family: "Myriad Pro";
   background-color: #cbd4e6; }
   .footer_content_bg {
     background-color: #cbd4e6; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .footer_content {
+      justify-content: center; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .footer_content {
+      justify-content: center; } }
   .footer_content__column {
     padding: 120px 0; }
+    @media (min-width: 320px) and (max-width: 575px) {
+      .footer_content__column {
+        padding: 20px 0;
+        width: 80%; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .footer_content__column {
+        padding: 20px 0;
+        width: 50%;
+        justify-content: center; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .footer_content__column {
+        padding: 20px 20px;
+        width: 40%; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .footer_content__column {
+        padding: 20px 0;
+        width: 50%;
+        justify-content: center; } }
     .footer_content__column_link {
       color: #9fa2a7; }
   .footer_content__heading {
@@ -689,20 +778,42 @@ footer {
     line-height: 24px;
     font-weight: bold;
     padding-left: 0px; }
+    @media (min-width: 320px) and (max-width: 575px) {
+      .footer_content__heading {
+        text-align: center; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .footer_content__heading {
+        text-align: center;
+        padding-left: 20px; } }
   .footer_content__item {
     padding-bottom: 27px;
     font-size: 16px;
     letter-spacing: 0px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .footer_content__item {
+        text-align: left;
+        padding: 10px 0; } }
     .footer_content__item:first-child {
       margin-top: 70px; }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .footer_content__item:first-child {
+          padding-top: 20px;
+          margin-top: 0; } }
 
 /*get_in_touch*/
 .list__item {
   display: flex;
   align-items: center;
   padding-bottom: 60px; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .list__item {
+      text-align: left;
+      padding: 10px 0; } }
   .list__item:first-child {
     padding-top: 70px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .list__item:first-child {
+        padding-top: 20px; } }
   .list__item_mail {
     width: 40px;
     height: 31px; }
@@ -724,6 +835,9 @@ footer {
     line-height: 24px; }
   .list__item_social {
     padding-right: 30px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .list__item_social {
+        padding-right: 20px; } }
   .list__item_row {
     display: inline-flex;
     flex-direction: row; }
@@ -731,27 +845,27 @@ footer {
 .facebook {
   width: 16px;
   height: 26px;
-  background: url("../img/socials.png") 0 0; }
+  background: url("./dist/img/socials.png") 0 0; }
 
 .google-plus {
   width: 34px;
   height: 26px;
-  background: url("../img/socials.png") -42px 0; }
+  background: url("./dist/img/socials.png") -42px 0; }
 
 .vk {
   width: 28px;
   height: 26px;
-  background: url("../img/socials.png") -110px 0; }
+  background: url("./dist/img/socials.png") -110px 0; }
 
 .youtube {
   width: 22px;
   height: 26px;
-  background: url("../img/socials.png") -165px 0; }
+  background: url("./dist/img/socials.png") -165px 0; }
 
 .linkedin {
   width: 22px;
   height: 26px;
-  background: url("../img/socials.png") -215px 0; }
+  background: url("./dist/img/socials.png") -215px 0; }
 
 /*quick links and our services*/
 .arrow::before {
@@ -776,192 +890,231 @@ footer {
   .form__input_name {
     margin-top: 50px;
     background-color: #cbd4e6; }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .form__input_name {
+        margin-top: 0px; } }
 
 .item-1 {
-  border: 2px solid #e73f50; }
+  border: 2px solid #614180; }
 
 .item-2 {
-  border: 4px solid #cf2cc6; }
+  border: 4px solid #6fe037; }
 
 .item-3 {
-  border: 2px solid #98fc64; }
+  border: 2px solid #6401d5; }
 
 .item-4 {
-  border: 4px solid #a34471; }
+  border: 4px solid #c24046; }
 
 .item-5 {
-  border: 2px solid #c0f1c8; }
+  border: 2px solid #d651e5; }
 
 .item-6 {
-  border: 4px solid #d5693b; }
+  border: 4px solid #c8d8ae; }
 
 .item-7 {
-  border: 2px solid #a5d592; }
+  border: 2px solid #968d4e; }
 
 .item-8 {
-  border: 4px solid #0ee332; }
+  border: 4px solid #620db9; }
 
 .item-9 {
-  border: 2px solid #81fadf; }
+  border: 2px solid #ebb7f5; }
 
 .item-10 {
-  border: 4px solid #81aeed; }
+  border: 4px solid #d8aaaf; }
 
 .item-11 {
-  border: 2px solid #d708e3; }
+  border: 2px solid #c69064; }
 
 .item-12 {
-  border: 4px solid #d565da; }
+  border: 4px solid #53695f; }
 
 .item-13 {
-  border: 2px solid #098e20; }
+  border: 2px solid #1bc277; }
 
 .item-14 {
-  border: 4px solid #c2df46; }
+  border: 4px solid #67ac82; }
 
 .item-15 {
-  border: 2px solid #e4c9bc; }
+  border: 2px solid #77e846; }
 
 .item-16 {
-  border: 4px solid #5312e8; }
+  border: 4px solid #1ad57d; }
 
 .item-17 {
-  border: 2px solid #301a15; }
+  border: 2px solid #5946ac; }
 
 .item-18 {
-  border: 4px solid #597bab; }
+  border: 4px solid #0791ad; }
 
 #tabs-1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-4 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-5 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-6 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-7 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-8 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-9 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-10 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-11 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-12 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-13 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-14 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-15 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-16 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-17 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 #tabs-18 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto; }
+  padding: 15px 0 0 0;
+  margin: 0 auto 15px auto;
+  border: 1px solid #e3e6ea;
+  border-top: none; }
 
 .tabs {
   border-bottom: 1px solid #e3e6ea; }
 
 .main__nav {
-  margin: 35px 0 15px 0;
+  margin-top: 35px;
   padding: 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -985,12 +1138,29 @@ footer {
     font-weight: bold;
     text-align: center; }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .rentgen-full {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .rentgen {
+    display: none; } }
+
 /*-----------------------------Шаблон карты клиники------------------------------------*/
 .clinic {
   margin: 15px;
   padding: 30px 20px 10px 20px;
   width: 40%;
   height: 240px; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .clinic {
+      padding: 16px;
+      width: 100%;
+      height: 100%; } }
+  @media (min-width: 768px) and (max-width: 1439px) {
+    .clinic {
+      padding: 16px;
+      height: 100%; } }
   .clinic__card {
     display: flex;
     justify-content: space-between;
@@ -998,15 +1168,25 @@ footer {
   .clinic__img {
     width: 200px;
     height: 50px; }
+    @media (min-width: 320px) and (max-width: 1199px) {
+      .clinic__img {
+        margin: 0 auto; } }
   .clinic__info {
     display: flex;
     flex-direction: column;
     text-align: right; }
+    @media (min-width: 320px) and (max-width: 1199px) {
+      .clinic__info {
+        text-align: center;
+        margin: 0 auto; } }
     .clinic__info_name {
       font-size: 36px;
       color: #494848;
       font-family: "Calibri";
       font-weight: bold; }
+      @media (min-width: 320px) and (max-width: 1439px) {
+        .clinic__info_name {
+          font-size: 22px; } }
     .clinic__info_address {
       padding: 0 0 36px 0;
       font-size: 16px;
@@ -1014,26 +1194,53 @@ footer {
       color: #43b1d2;
       font-family: "Calibri";
       font-style: italic; }
+      @media (min-width: 320px) and (max-width: 1439px) {
+        .clinic__info_address {
+          padding: 0 0 16px 0;
+          font-size: 14px;
+          line-height: 12px; } }
   .clinic__text {
     width: 100%;
     font-size: 16px;
     line-height: 14px;
     color: #494848;
     font-family: "Calibri";
-    padding-bottom: 30px; }
+    padding-bottom: 10px; }
+    @media (min-width: 1440px) {
+      .clinic__text {
+        font-size: 19px;
+        padding-bottom: 30px; } }
     .clinic__text_br {
       display: none; }
+      @media (min-width: 1440px) {
+        .clinic__text_br {
+          display: block; } }
   .clinic__bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
+    @media (min-width: 320px) and (max-width: 576px) {
+      .clinic__bottom {
+        justify-content: center; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .clinic__bottom {
+        justify-content: center; } }
     .clinic__bottom_phone_number {
       font-size: 19px;
       line-height: 17px;
       color: #494848;
       font-family: "Calibri";
       font-weight: bold; }
+      @media (min-width: 320px) and (max-width: 575px) {
+        .clinic__bottom_phone_number {
+          padding: 0 16px 16px 0; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .clinic__bottom_phone_number {
+          padding: 0 0 16px 0; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .clinic__bottom_phone_number {
+          padding: 16px; } }
     .clinic__bottom_link {
       color: #43b1d2; }
     .clinic__bottom_button {
@@ -1062,291 +1269,33 @@ footer {
   -ms-border-radius: 8px;
   -o-border-radius: 8px; }
 
-@media (min-width: 320px) and (max-width: 576px) {
-  .cube {
-    width: 100%;
-    height: 320px; }
-  /*clinics*/
-  .clinic {
-    padding: 16px;
-    width: 100%;
-    height: 100%; }
-    .clinic__img {
-      margin: 0 auto; }
-    .clinic__info {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin: 0 auto; }
-      .clinic__info_name {
-        font-size: 22px; }
-      .clinic__info_address {
-        padding: 0 0 16px 0;
-        font-size: 14px;
-        line-height: 12px; }
-    .clinic__text {
-      font-size: 16px;
-      line-height: 14px;
-      padding-bottom: 10px; }
-      .clinic__text br {
-        display: none; }
-    .clinic__bottom {
-      justify-content: center; }
-      .clinic__bottom_phone_number {
-        font-size: 19px;
-        padding: 0 16px 16px 0; }
-  .rentgen-full {
-    display: none; }
-  /* footer section*/
-  .footer {
-    padding: 20px 16px;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .footer .brand {
-    margin: 0 auto;
-    padding-bottom: 20px; }
-  .footer .brand__img {
-    width: 64px;
-    height: 57px; }
-  .footer .brand__name {
-    font-size: 24px; }
-  .form__footer {
-    text-align: center; }
-  .form__footer .recall__input {
-    margin-top: 16px; }
-  .footer_content {
-    flex-wrap: wrap;
-    justify-content: center; }
-  .footer_content__column {
-    padding: 20px 0;
-    width: 80%; }
-  .footer_content__heading {
-    text-align: center;
-    padding-left: 0px; }
-  .list__item:first-child {
-    padding-top: 20px; }
-  .list__item, .footer_content__item {
-    text-align: left;
-    padding: 10px 0; }
-  .list__item_social {
-    padding-right: 20px; }
-  .footer__form {
-    text-align: center; } }
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .cube {
-    width: 50%;
-    height: 325px; }
-  .clinic {
-    padding: 16px;
-    width: 100%;
-    height: 100%; }
-    .clinic__img {
-      margin: 0 auto; }
-    .clinic__info {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin: 0 auto; }
-      .clinic__info_name {
-        font-size: 22px; }
-      .clinic__info_address {
-        padding: 0 0 16px 0;
-        font-size: 14px;
-        line-height: 12px; }
-    .clinic__text {
-      font-size: 16px;
-      line-height: 14px;
-      padding-bottom: 10px; }
-      .clinic__text br {
-        display: none; }
-    .clinic__bottom {
-      justify-content: space-between; }
-      .clinic__bottom_phone_number {
-        font-size: 19px; }
-  .rentgen-full {
-    display: none; }
-  /* footer section*/
-  .footer {
-    padding: 20px 16px;
-    flex-wrap: wrap; }
-  .footer .brand {
-    margin: 0 auto;
-    padding-bottom: 20px; }
-  .footer .brand__img {
-    width: 64px;
-    height: 57px; }
-  .footer .brand__name {
-    font-size: 24px; }
-  .form__footer .recall__input {
-    margin-top: 16px; }
-  .footer_content {
-    flex-wrap: wrap;
-    justify-content: center; }
-  .footer_content__column {
-    padding: 20px 0;
-    width: 50%;
-    justify-content: center; }
-  .footer_content__heading {
-    text-align: center;
-    padding-left: 20px; }
-  .list__item:first-child {
-    padding-top: 20px; }
-  .list__item, .footer_content__item {
-    text-align: left;
-    padding: 10px 0; }
-  .footer_content__item:first-child {
-    padding-top: 20px;
-    margin-top: 0; }
-  .list__item_social {
-    padding-right: 20px; }
-  .footer__form {
-    text-align: center; }
-  .form__input_name {
-    margin-top: 00px; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .container {
-    width: 100%;
-    margin: 0 auto; }
-  .cube {
-    width: 50%;
-    height: 325px; }
-  /*Clinic*/
-  .clinic {
-    padding: 16px;
-    width: 40%;
-    height: 100%; }
-    .clinic__img {
-      margin: 0 auto; }
-    .clinic__info {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin: 0 auto; }
-      .clinic__info_name {
-        font-size: 22px; }
-      .clinic__info_address {
-        padding: 0 0 16px 0;
-        font-size: 14px;
-        line-height: 12px; }
-    .clinic__text {
-      font-size: 16px;
-      line-height: 14px;
-      padding-bottom: 10px; }
-      .clinic__text br {
-        display: none; }
-    .clinic__bottom {
-      justify-content: center; }
-      .clinic__bottom_phone_number {
-        font-size: 19px;
-        padding: 0 0 16px 0; }
-  .rentgen {
-    display: none; }
-  /* footer */
-  .footer_content {
-    flex-wrap: wrap; }
-  .footer_content__column {
-    padding: 20px 20px;
-    width: 40%; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .advantages__menu {
-    justify-content: space-around; }
-  .cube {
-    width: 50%;
-    height: 325px; }
-  /*Clinic*/
-  .clinic {
-    padding: 16px;
-    width: 40%;
-    height: 100%; }
-    .clinic__img {
-      margin: 0 auto; }
-    .clinic__info {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin: 0 auto; }
-      .clinic__info_name {
-        font-size: 22px; }
-      .clinic__info_address {
-        padding: 0 0 16px 0;
-        font-size: 14px;
-        line-height: 12px; }
-    .clinic__text {
-      font-size: 16px;
-      line-height: 14px;
-      padding-bottom: 10px; }
-      .clinic__text br {
-        display: none; }
-    .clinic__bottom {
-      justify-content: center; }
-      .clinic__bottom_phone_number {
-        font-size: 19px;
-        padding: 16px; }
-  .rentgen {
-    display: none; }
-  .form__footer-title br {
-    display: none; }
-  .footer_content {
-    flex-wrap: wrap;
-    justify-content: center; }
-  .footer_content__column {
-    padding: 20px 0;
-    width: 50%;
-    justify-content: center; }
-  .footer__form {
-    padding-left: 40px; } }
-
-@media (min-width: 1200px) {
-  .container {
-    width: 100%;
-    margin: 0 auto; }
-  .cube {
-    width: 25%;
-    height: 325px; }
-  /*Clinic*/
-  .clinic {
-    padding: 16px;
-    width: 40%;
-    height: 100%; }
-    .clinic__info {
-      display: flex;
-      flex-direction: column; }
-      .clinic__info_name {
-        font-size: 22px; }
-      .clinic__info_address {
-        padding: 0 0 16px 0;
-        font-size: 14px;
-        line-height: 12px; }
-    .clinic__text {
-      font-size: 16px;
-      line-height: 14px;
-      padding-bottom: 10px; }
-      .clinic__text br {
-        display: none; }
-    .clinic__bottom {
-      justify-content: space-between; }
-      .clinic__bottom_phone_number {
-        font-size: 19px; }
-  .form__footer-title br {
-    display: none; }
-  .rentgen {
-    display: none; } }
-
-@media (min-width: 1440px) {
-  .container {
-    width: 1440px;
-    margin: 0 auto; }
-  .cube {
-    width: 360px;
-    height: 325px; }
-  .form__footer-title br {
-    display: none; }
-  .clinic__text {
-    font-size: 19px; }
-    .clinic__text br {
-      display: block; }
-  .rentgen {
-    display: none; } }
+.articals {
+  padding: 35px 15px 40px 15px;
+  width: 810px;
+  font-family: "Calibri";
+  color: #494848; }
+  .articals__label {
+    font-size: 36px;
+    font-style: italic; }
+  .articals__figure {
+    height: 234px;
+    margin: 20px 0; }
+  .articals__caption {
+    float: right; }
+  .articals__text {
+    font-size: 18px;
+    line-height: 14px;
+    padding-bottom: 15px; }
+  .articals__buttons {
+    display: flex;
+    justify-content: space-between; }
+    .articals__buttons_nav {
+      width: 45px;
+      height: 36px;
+      justify-content: center;
+      align-items: center; }
+    .articals__buttons_read_more {
+      background-color: #37c3a8;
+      color: #fff;
+      border-radius: 6px;
+      border: none; }

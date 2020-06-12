@@ -6,6 +6,15 @@ footer{
     display: flex;
     background-color: $main-color;
     justify-content: space-between;
+    @media (min-width: 320px) and (max-width: 576px) {
+        padding: 20px 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media (min-width: 576px) and (max-width: 768px) {
+        padding: 20px 16px;
+        flex-wrap: wrap;
+    }
     &__copyright{
         text-align: center;
         font-size: 13px;
@@ -18,7 +27,12 @@ footer{
     &__form{
         background-color: $bg-color;
         padding-left: 0;
-    
+        @media (min-width: 320px) and (max-width: 767px) {
+            text-align: center;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            padding-left: 40px;
+        }
         &_label{
             font-size: 22px;
             letter-spacing: 1px;
@@ -44,35 +58,88 @@ footer{
             border: none;
         }        
     }
-}
+        .brand {
+            @media (min-width: 320px) and (max-width: 768px) {
+                margin: 0 auto;
+                padding-bottom: 20px;
+            }
+            &__img {
+                @media (min-width: 320px) and (max-width: 768px) {
+                    width: 64px;
+                    height: 57px;
+                }
+            }
+
+            &__name {
+                @media (min-width: 320px) and (max-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
 .form__footer{
     justify-content: center;
-    
+    @media (min-width: 320px) and (max-width: 576px) {
+        text-align: center;
+    }
     &-title{
         font-size: 24px;
         color: #ffffff;
         font-family: "Calibri";
         font-weight: bold;
+        &_br{
+            @media (min-width: 992px){
+                display: none;
+            }
+        }
     }
     .recall__input{
         margin-top: 0;
+        @media (min-width: 320px) and (max-width: 767px) {
+            margin-top: 16px;
+        }
     }
 }
 
-/*foooter content*/
+/*footer content*/
 
 .footer_content{
     &_bg{
         background-color: $bg-color;
     }
-    display: flex;    
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     color: #000000;
     font-family: "Myriad Pro";
     background-color:$bg-color;
-
+    @media (min-width: 320px) and (max-width: 767px) {
+        justify-content: center;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        justify-content: center;
+    }
     &__column{
         padding: 120px 0;
+        @media (min-width: 320px) and (max-width: 575px) {
+            padding: 20px 0;
+            width: 80%;
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+            padding: 20px 0;
+            width: 50%;
+            justify-content: center;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            padding: 20px 20px;
+            width: 40%;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            padding: 20px 0;
+            width: 50%;
+            justify-content: center;
+        }
         &_link{
             color: #9fa2a7; 
         }    
@@ -83,14 +150,28 @@ footer{
         line-height: 24px;
         font-weight: bold;
         padding-left: 0px;
+            @media (min-width: 320px) and (max-width: 575px) {
+                text-align: center;
+            }
+            @media (min-width: 576px) and (max-width: 767px) {
+                text-align: center;
+                padding-left: 20px;
+            }
         }
     &__item{
         padding-bottom: 27px;
         font-size: 16px;
         letter-spacing: 0px;
-        
+        @media (min-width: 320px) and (max-width: 767px) {
+            text-align: left;
+            padding: 10px 0 ;
+        }
             &:first-child{
             margin-top: 70px;
+                @media (min-width: 576px) and (max-width: 767px) {
+                    padding-top: 20px ;
+                    margin-top: 0;
+                }
             }
         }
 }
@@ -100,9 +181,15 @@ footer{
     display: flex;
     align-items: center;
     padding-bottom: 60px;
-
+    @media (min-width: 320px) and (max-width: 767px) {
+        text-align: left;
+        padding: 10px 0 ;
+    }
     &:first-child{
         padding-top: 70px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding-top: 20px;
+        }
     }
 
     &_mail{
@@ -131,6 +218,9 @@ footer{
     }
     &_social{
         padding-right: 30px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding-right: 20px;
+        }
     }
     &_row{
         display: inline-flex;
@@ -140,27 +230,27 @@ footer{
 .facebook{
     width: 16px;
     height: 26px;
-    background: url('../../image/socials.png') 0 0;
+    background: url('./dist/img/socials.png') 0 0;
     }
 .google-plus{
     width: 34px;
     height: 26px;
-    background: url('../../image/socials.png')  -42px 0;
+    background: url('./dist/img/socials.png')  -42px 0;
     }
 .vk{
     width: 28px;
     height: 26px;
-    background: url('../../image/socials.png')  -110px 0;
+    background: url('./dist/img/socials.png')  -110px 0;
     }
 .youtube{
     width: 22px;
     height: 26px;
-    background: url('../../image/socials.png')  -165px 0;
+    background: url('./dist/img/socials.png')  -165px 0;
     }
 .linkedin{
     width: 22px;
     height: 26px;
-    background: url('../../image/socials.png')  -215px 0;
+    background: url('./dist/img/socials.png')  -215px 0;
     }    
 /*quick links and our services*/
 
@@ -184,9 +274,11 @@ footer{
     letter-spacing: 0px;
     width: 230px;
     padding: 20px 0;
-    
     &_name{
         margin-top: 50px;
         background-color: $bg-color;
+        @media (min-width: 576px) and (max-width: 767px) {
+            margin-top: 0px;
+        }
     }
 }

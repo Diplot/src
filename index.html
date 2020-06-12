@@ -81,30 +81,30 @@
             <div class="cube best_treatment">
                 <figure class="cube__circle"><img src="dist/img/stethoscope.png"
                                                   alt="схематическое изображение стетоскопа"></figure>
-                <h3>Best Treatment</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                <h3 class="cube__name">Best Treatment</h3>
+                <p class="cube__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
 
             <div class="cube emergency_help">
                 <figure class="cube__circle"><img src="dist/img/emergency_help.png"
                                                   alt="схематическое изображение трубки телефона звонящей в клинику">
                 </figure>
-                <h3>Emergency Help</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                <h3 class="cube__name">Emergency Help</h3>
+                <p class="cube__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
 
             <div class="cube medical_staff">
                 <figure class="cube__circle"><img src="dist/img/medical_staff.png"
                                                   alt="схематическое изображение медицинского работника"></figure>
-                <h3>Medical Staff</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                <h3 class="cube__name">Medical Staff</h3>
+                <p class="cube__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
 
             <div class="cube qualified_doctors">
                 <figure class="cube__circle"><img src="dist/img/car.png"
                                                   alt="схематическое изображение машины скорой помощи"></figure>
-                <h3>Qualified Doctors</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                <h3 class="cube__name">Qualified Doctors</h3>
+                <p class="cube__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
         </nav>
     </div>
@@ -657,38 +657,44 @@
 </div>
 
 
-<!--
-    <section>
-        <div>
-            <h1><i>Последние статьи</i></h1>
-            <div>
-                <img src="image/artical.png" alt="фото статьи">
-                <p>Что такое текст «рыба» знают все, кто работает с <br>
-                    версткой журналов, дизайном и разработкой сайтов.<br>
-                    Этот текст служит для демонстрации того, как<br>
-                    контент впоследствии будет выглядеть на готовой<br>
-                    странице, чтобы увидеть, правильно ли<br>
-                    размещаются абзацы, отступы, хорошо ли смотрятся<br>
-                    шрифты. Такие рыбные тексты, как правило, не несут<br>
-                    никакой смысловой нагрузки.
-                </p>
-                <p>На моменте создания макета у дизайнера нет<br>
-                    готовых текстов, поэтому генерируется некий<br>
-                    демонстрационный текст. Некоторые студии<br>
-                    предпочитают писать такой текст самостоятельно, но<br>
-                    чаще используются готовые тексты, созданные<br>
-                    программой – генератором текста. Более того, у<br>
-                    такого текста есть один неоспоримый плюс –<br>
-                </p>
-                <button>Читать подробнее</button>
-            </div>
-            <button><img src="image/arrow-left.png" alt="стрелока влево"></button>
-            <button><img src="image/arrow-right.png" alt="стрелока вправо"></button>
-        </div>
-    </section>
 
-    <section>
-        <div>
+    <section class="container">
+        <div class="articals">
+            <h1 class="articals__label">Последние статьи</h1>
+            <figure class="articals__figure">
+                <img class="articals__img" src="./dist/img/artical.jpg" alt="фото статьи">
+                <figcaption class="articals__caption">
+                    <p class="articals__text">Что такое текст «рыба» знают все, кто работает с <br class="articals__text_br">
+                        версткой журналов, дизайном и разработкой сайтов.<br class="articals__text_br">
+                        Этот текст служит для демонстрации того, как<br class="articals__text_br">
+                        контент впоследствии будет выглядеть на готовой<br class="articals__text_br">
+                        странице, чтобы увидеть, правильно ли<br class="articals__text_br">
+                        размещаются абзацы, отступы, хорошо ли смотрятся<br class="articals__text_br">
+                        шрифты. Такие рыбные тексты, как правило, не несут<br class="articals__text_br">
+                        никакой смысловой нагрузки.
+                    </p>
+                    <p  class="articals__text">На моменте создания макета у дизайнера нет<br class="articals__text_br">
+                        готовых текстов, поэтому генерируется некий<br class="articals__text_br">
+                        демонстрационный текст. Некоторые студии<br class="articals__text_br">
+                        предпочитают писать такой текст самостоятельно, но<br class="articals__text_br">
+                        чаще используются готовые тексты, созданные<br class="articals__text_br">
+                        программой – генератором текста. Более того, у<br class="articals__text_br">
+                        такого текста есть один неоспоримый плюс –<br class="articals__text_br">
+                    </p>
+
+                </figcaption>
+            </figure>
+            <div class="articals__buttons">
+                <div >
+                    <button class="articals__buttons_nav"><img src="./dist/img/arrow-left.png" alt="стрелока влево"></button>
+                    <button class="articals__buttons_nav"><img src="./dist/img/arrow-right.png" alt="стрелока вправо"></button>
+                </div>
+                <button class="articals__buttons_read_more">Читать подробнее</button>
+            </div>
+
+        </div>
+
+        <!--<div>
             <h1><i>Отзывы о нас</i></h1>
                 <div>
                     <p>Что такое текст «рыба» знают все, кто работает с <br>
@@ -711,9 +717,9 @@
                 </div>
             <button><img src="image/arrow-left.png" alt="стрелочка влево"></button>
             <button><img src="image/arrow-right.png" alt="стрелока вправо"></button>
-        </div>
+        </div> -->
     </section>
--->
+
 <footer>
     <div class="container">
         <div class="footer">
@@ -723,7 +729,8 @@
                 <div class="brand__name"><p class="">Единый <br> Центр записи</p></div>
             </div>
             <form action="" class="form__footer">
-                <label for="footer-recall" class="form__footer-title">Заказать звонок:<br></label>
+                <label for="footer-recall" class="form__footer-title">Заказать звонок:
+                    <br class="form__footer-title_br"></label>
                 <input type="tel" id="footer-recall" class="recall__input" maxlength="13" autocomplete="none"
                        placeholder="+380"
                        pattern="\+380\(50|63|66|67|68|93|95|96|97|98|99)\d{7}" required>

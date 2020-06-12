@@ -38,3 +38,16 @@ a{
 /* переменные */
 $main-color: #6bf5f5;   
 $bg-color: #cbd4e6;
+
+@media (min-width: 320px) and (max-width: 1439px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1440px){
+    .container{
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
