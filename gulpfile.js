@@ -1,21 +1,14 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
+var rename = require("gulp-rename");
 var pipeline = require('readable-stream').pipeline;
- 
-gulp.task('js', function () {
-  return pipeline(
-        gulp.src('src/js/app.js'),
-        uglify(),
-        gulp.dest('dist/js')
-  );
-});
+var tinypng = require('gulp-tinypng-compress');
 gulp.task('scss', function(){
     return gulp.src('src/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'));
 });
-
 gulp.task('css', () => {
     const postcss    = require('gulp-postcss')
     const sourcemaps = require('gulp-sourcemaps')
@@ -26,9 +19,20 @@ gulp.task('css', () => {
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest('build/') )
 });
-gulp.task('default', gulp.series(['scss','js'],));
+gulp.task('image', () => {
+    return gulp.src('src/**/*.{png,jpg,jpeg}')
+        .pipe(tinypng({
+            key: 'Lh2dfTTKFwjBsd7BjcW2CqPZ7hfhGqx4',
+            sigFile: 'images/.tinypng-sigs',
+            log: true
+        }))
+        .pipe(rename({
+            dirname: "",
+        }))
 
+        .pipe(gulp.dest('./dist/img'));
+});
+gulp.task('default', gulp.series(['scss','image']));
 gulp.task('watch', function(){
     gulp.watch( 'src/**/*.scss', gulp.series(['scss']));
-    gulp.watch( 'src/**/*.js', gulp.series(['js']))
 });

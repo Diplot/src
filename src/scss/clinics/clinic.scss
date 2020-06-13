@@ -17,10 +17,7 @@ $odd:2px;
         border-top: none;
     }
 }   
-.tabs{
-    border-bottom: 1px solid #e3e6ea;
-    
-}
+
 .main__nav{
     margin-top: 35px;
     padding: 0;
@@ -33,7 +30,7 @@ $odd:2px;
 
     &_li{
         display: inline-flex;
-        :focus,:active {
+        :focus {
                 margin: -1px;
                 border: 1px solid #e3e6ea;
                 border-bottom:1px solid #fff;
@@ -52,11 +49,6 @@ $odd:2px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .rentgen-full {
-        display: none;
-    }
-}
-@media (min-width: 768px) {
-    .rentgen {
         display: none;
     }
 }

@@ -38,7 +38,12 @@ a{
 /* переменные */
 $main-color: #6bf5f5;   
 $bg-color: #cbd4e6;
-
+.articals_comment{
+    display: flex;
+    @media (min-width: 320px) and (max-width: 575px) {
+        flex-wrap: wrap;
+    }
+}
 @media (min-width: 320px) and (max-width: 1439px) {
     .container{
         width: 100%;

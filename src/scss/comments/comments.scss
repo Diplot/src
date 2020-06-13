@@ -1,0 +1,35 @@
+
+.comment{
+  padding: 35px 15px 40px 15px;
+  width: 410px;
+  font-family: "Calibri";
+  color: #494848;
+  @media (min-width: 320px) and (max-width: 575px) {
+    width: 100%;
+  }
+  &__main{
+    margin: 20px 0;
+    height: 234px;
+  }
+  &__label{
+    font-size: 36px;
+    font-style: italic;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 14px;
+    padding-bottom: 15px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    &_nav {
+      width: 45px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+    }
+  }
+}
