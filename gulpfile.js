@@ -30,7 +30,7 @@ gulp.task('image', () => {
             dirname: "",
         }))
 
-        .pipe(gulp.dest('./dist/img'));
+        .pipe(gulp.dest('dist/img'));
 });
 gulp.task('default', gulp.series(['scss','image']));
 gulp.task('watch', function(){

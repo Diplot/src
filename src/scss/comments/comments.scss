@@ -1,15 +1,22 @@
 
 .comment{
   padding: 35px 15px 40px 15px;
+  margin-bottom: 15px;
   width: 410px;
+  height: 100%;
   font-family: "Calibri";
   color: #494848;
-  @media (min-width: 320px) and (max-width: 575px) {
+  @media (min-width: 320px) and (max-width: 1119px) {
     width: 100%;
+    padding: 15px;
   }
   &__main{
     margin: 20px 0;
     height: 234px;
+    @media (min-width: 320px) and (max-width: 1119px) {
+      width: 100%;
+      align-items: center;
+    }
   }
   &__label{
     font-size: 36px;
@@ -19,11 +26,20 @@
     font-size: 18px;
     line-height: 14px;
     padding-bottom: 15px;
+    @media (min-width: 320px) and (max-width: 1439px) {
+      &_br {
+        display: none;
+      }
+    }
   }
   &__buttons {
+    position: absolute;
+    bottom: 55px;
+    right: 15px;
     display: flex;
-    justify-content: flex-end;
-
+    @media (min-width: 320px) and (max-width: 1119px) {
+      bottom: 30px;
+    }
     &_nav {
       width: 45px;
       height: 36px;
