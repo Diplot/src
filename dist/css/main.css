@@ -902,58 +902,58 @@ footer {
         margin-top: 0px; } }
 
 .item-1 {
-  border: 2px solid #9c9325; }
+  border: 2px solid #4cfd1a; }
 
 .item-2 {
-  border: 4px solid #8306c4; }
+  border: 4px solid #9ee873; }
 
 .item-3 {
-  border: 2px solid #e53480; }
+  border: 2px solid #6d3588; }
 
 .item-4 {
-  border: 4px solid #120b80; }
+  border: 4px solid #e5a153; }
 
 .item-5 {
-  border: 2px solid #acbdae; }
+  border: 2px solid #82f3a8; }
 
 .item-6 {
-  border: 4px solid #7c0973; }
+  border: 4px solid #ce95bd; }
 
 .item-7 {
-  border: 2px solid #596c57; }
+  border: 2px solid #e9726e; }
 
 .item-8 {
-  border: 4px solid #8e6f4e; }
+  border: 4px solid #8bd32f; }
 
 .item-9 {
-  border: 2px solid #fdb2fd; }
+  border: 2px solid #23728e; }
 
 .item-10 {
-  border: 4px solid #3a2a49; }
+  border: 4px solid #4d1bed; }
 
 .item-11 {
-  border: 2px solid #a2b4ed; }
+  border: 2px solid #8b59da; }
 
 .item-12 {
-  border: 4px solid #c41162; }
+  border: 4px solid #fadcff; }
 
 .item-13 {
-  border: 2px solid #8799d2; }
+  border: 2px solid #c89eab; }
 
 .item-14 {
-  border: 4px solid #249501; }
+  border: 4px solid #152e5a; }
 
 .item-15 {
-  border: 2px solid #8b1a28; }
+  border: 2px solid #5ec53f; }
 
 .item-16 {
-  border: 4px solid #c424bc; }
+  border: 4px solid #3d960d; }
 
 .item-17 {
-  border: 2px solid #1e11b6; }
+  border: 2px solid #1a880d; }
 
 .item-18 {
-  border: 4px solid #b414fd; }
+  border: 4px solid #a3c076; }
 
 #tabs-1 {
   display: flex;
@@ -1337,7 +1337,6 @@ footer {
   padding: 35px 15px 40px 15px;
   margin-bottom: 15px;
   width: 410px;
-  height: 100%;
   font-family: "Calibri";
   color: #494848; }
   @media (min-width: 320px) and (max-width: 1119px) {
@@ -1345,8 +1344,7 @@ footer {
       width: 100%;
       padding: 15px; } }
   .comment__main {
-    margin: 20px 0;
-    height: 234px; }
+    margin: 20px 0; }
     @media (min-width: 320px) and (max-width: 1119px) {
       .comment__main {
         width: 100%;
@@ -1355,12 +1353,15 @@ footer {
     font-size: 36px;
     font-style: italic; }
   .comment__text {
+    height: auto;
     font-size: 18px;
     line-height: 14px;
-    padding-bottom: 15px; }
+    padding-bottom: 30px; }
     @media (min-width: 320px) and (max-width: 1439px) {
-      .comment__text_br {
-        display: none; } }
+      .comment__text {
+        line-height: 1; }
+        .comment__text_br {
+          display: none; } }
   .comment__buttons {
     position: absolute;
     bottom: 55px;
