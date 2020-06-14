@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var rename = require("gulp-rename");
 var pipeline = require('readable-stream').pipeline;
