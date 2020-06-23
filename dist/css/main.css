@@ -342,6 +342,15 @@ a {
   src: url(../../font/tahoma.ttf); }
 
 /* переменные */
+#art-1, #com-1 {
+  color: green; }
+
+#art-2, #com-2 {
+  color: blue; }
+
+#art-3, #com-3 {
+  color: red; }
+
 .articals_comment {
   position: relative;
   display: flex; }
@@ -902,58 +911,58 @@ footer {
         margin-top: 0px; } }
 
 .item-1 {
-  border: 2px solid #eed0b3; }
+  border: 2px solid #d24e1f; }
 
 .item-2 {
-  border: 4px solid #8a6fbf; }
+  border: 4px solid #d0ad7c; }
 
 .item-3 {
-  border: 2px solid #650ec7; }
+  border: 2px solid #b36541; }
 
 .item-4 {
-  border: 4px solid #ea1797; }
+  border: 4px solid #144bbe; }
 
 .item-5 {
-  border: 2px solid #30709b; }
+  border: 2px solid #1746dd; }
 
 .item-6 {
-  border: 4px solid #64a7d4; }
+  border: 4px solid #471a74; }
 
 .item-7 {
-  border: 2px solid #12315a; }
+  border: 2px solid #cf97f9; }
 
 .item-8 {
-  border: 4px solid #fa687f; }
+  border: 4px solid #d297cf; }
 
 .item-9 {
-  border: 2px solid #543c31; }
+  border: 2px solid #840317; }
 
 .item-10 {
-  border: 4px solid #4113e6; }
+  border: 4px solid #e68ef6; }
 
 .item-11 {
-  border: 2px solid #7a6046; }
+  border: 2px solid #f63993; }
 
 .item-12 {
-  border: 4px solid #278288; }
+  border: 4px solid #45f29e; }
 
 .item-13 {
-  border: 2px solid #8f980c; }
+  border: 2px solid #370d7d; }
 
 .item-14 {
-  border: 4px solid #f0f09d; }
+  border: 4px solid #5401f2; }
 
 .item-15 {
-  border: 2px solid #5d4c8f; }
+  border: 2px solid #b6f50a; }
 
 .item-16 {
-  border: 4px solid #ce8ffa; }
+  border: 4px solid #7524f8; }
 
 .item-17 {
-  border: 2px solid #60e5c2; }
+  border: 2px solid #9a21e3; }
 
 .item-18 {
-  border: 4px solid #114f11; }
+  border: 4px solid #ee5bc3; }
 
 #tabs-1 {
   display: flex;

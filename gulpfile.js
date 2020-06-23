@@ -22,8 +22,7 @@ gulp.task('image', () => {
     return gulp.src('src/**/*.{png,jpg,jpeg}')
         .pipe(tinypng({
             key: 'Lh2dfTTKFwjBsd7BjcW2CqPZ7hfhGqx4',
-            sigFile: 'images/.tinypng-sigs',
-            log: true
+            sigFile: 'images/.tinypng-sigs'
         }))
         .pipe(rename({
             dirname: "",

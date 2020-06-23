@@ -2,17 +2,16 @@ const path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./src/js/main.js",
-    mode:"development",
+    entry: "./src/js/index.js",
     output: {
         path: path.resolve(__dirname, './dist/js'),
-        filename: '[name].bundle.js'
+        filename: "[name].bandle.js"
     },
+
     plugins: [new HtmlWebpackPlugin(
         {
-            title: 'Custom template',
-            // Load a custom template (lodash by default)
-            template: 'index.html'
-        }
+            template: 'index.html',
+        },
     )],
+
 };

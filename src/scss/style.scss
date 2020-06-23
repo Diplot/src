@@ -38,6 +38,17 @@ a{
 /* переменные */
 $main-color: #6bf5f5;   
 $bg-color: #cbd4e6;
+
+
+#art-1,#com-1{
+    color: green;
+}
+#art-2,#com-2{
+    color: blue;
+}
+#art-3,#com-3{
+    color: red;
+}
 .articals_comment{
     position: relative;
     display: flex;
