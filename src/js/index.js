@@ -5,6 +5,11 @@ $(function () {
 /* Индекс слайда по умолчанию */
 var art = 1;
 showArt(art);
+/*Добавления слушателя на кнопку*/
+document.getElementById('nextArt').addEventListener('click', nextArt);
+document.getElementById('previousArt').addEventListener('click', previousArt);
+document.getElementById('nextCom').addEventListener('click', nextCom);
+document.getElementById('previousCom').addEventListener('click', previousCom);
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
 function nextArt() {
  showArt(art += 1);
