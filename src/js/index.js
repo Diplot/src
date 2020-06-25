@@ -60,3 +60,33 @@ function showCom(n) {
  }
  slidesCom[com-1].style.display = "block";
 }
+
+
+/* формула из scss*/
+function setBorder(even , odd){
+ for (var i =1 ; i<=18; i++){
+  function generateColor() {
+   var r = Math.floor(Math.random()*(255)).toString(16),
+       g = Math.floor(Math.random() * (255)).toString(16),
+       b = Math.floor(Math.random() * (255)).toString(16)
+
+   var color = '#'+r+g+b;
+   while(color.length <7){ //без этого может сгенерироватся значения, которые браузер не распознает как цвет.
+    color+=Math.floor(Math.random() * (15)).toString(16);
+   }
+   return color
+  }
+  var $color = generateColor();
+  if((i % 2) === 0) {
+   console.log(document.getElementById('item-'+i).style.border = even + ' solid ' +$color)
+  }
+  else {
+   console.log(document.getElementById('item-'+i).style.border = odd + ' solid ' + $color)
+  }
+
+ }
+ return;
+}
+setBorder('4px','2px');
+
+

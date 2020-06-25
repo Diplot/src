@@ -1,11 +1,5 @@
 
-$even: 4px;
-$odd:2px;
-@for $i from 1 through 18 {
-    .item-#{$i} { @if ($i % 2 == 0) {border: $even solid  rgba(random(255),random(255),random(255), $alpha: 1.0)} 
-                    @else {border: $odd solid  rgba(random(255),random(255),random(255), $alpha: 1.0)}
-    } 
-}
+
 @for $i from 1 through 18 {
     #tabs-#{$i}{ 
         display: flex ;

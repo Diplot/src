@@ -910,60 +910,6 @@ footer {
       .form__input_name {
         margin-top: 0px; } }
 
-.item-1 {
-  border: 2px solid #a7010c; }
-
-.item-2 {
-  border: 4px solid #cc557d; }
-
-.item-3 {
-  border: 2px solid #30f89f; }
-
-.item-4 {
-  border: 4px solid #d4c0c5; }
-
-.item-5 {
-  border: 2px solid #0ea02f; }
-
-.item-6 {
-  border: 4px solid #f9372c; }
-
-.item-7 {
-  border: 2px solid #7fa0bc; }
-
-.item-8 {
-  border: 4px solid #219159; }
-
-.item-9 {
-  border: 2px solid #9e8d09; }
-
-.item-10 {
-  border: 4px solid #bfb67b; }
-
-.item-11 {
-  border: 2px solid #d06180; }
-
-.item-12 {
-  border: 4px solid #1281ec; }
-
-.item-13 {
-  border: 2px solid #ff3b20; }
-
-.item-14 {
-  border: 4px solid #4a2411; }
-
-.item-15 {
-  border: 2px solid #84cce6; }
-
-.item-16 {
-  border: 4px solid #f85a01; }
-
-.item-17 {
-  border: 2px solid #ab6072; }
-
-.item-18 {
-  border: 4px solid #b6802d; }
-
 #tabs-1 {
   display: flex;
   justify-content: center;
