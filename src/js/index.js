@@ -77,16 +77,25 @@ function setBorder(even , odd){
    return color
   }
   var $color = generateColor();
+  var elem = document.getElementById('item-'+i);
   if((i % 2) === 0) {
-   console.log(document.getElementById('item-'+i).style.border = even + ' solid ' +$color)
+   elem.style.border = even + ' solid ' +$color
   }
   else {
-   console.log(document.getElementById('item-'+i).style.border = odd + ' solid ' + $color)
+   elem.style.border = odd + ' solid ' + $color
   }
-
  }
  return;
 }
 setBorder('4px','2px');
 
-
+var color = function rgb(){
+ var r = Math.floor(Math.random()*(256));
+ var g = Math.floor(Math.random()*(256));
+ var b = Math.floor(Math.random()*(256));
+ return '#'+r+g+b
+}
+/* меняем цвет кнопки по нажатию на заказе*/
+$('.clinic__bottom_button').click(function () {
+      $( this ).css('backgroundColor', color)
+});
