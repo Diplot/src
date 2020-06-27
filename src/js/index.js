@@ -97,5 +97,5 @@ var color = function rgb(){
 }
 /* меняем цвет кнопки по нажатию на заказе*/
 $('.clinic__bottom_button').click(function () {
-      $( this ).css('backgroundColor', color)
+      $( this ).css('backgroundColor', color).off('click')
 });
